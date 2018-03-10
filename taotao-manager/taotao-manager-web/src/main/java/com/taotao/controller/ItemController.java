@@ -1,12 +1,14 @@
 package com.taotao.controller;
 
 import com.taotao.common.pojo.EUDdataGridResult;
+import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date 2018/3/9 20:16
  */
 @Controller
+@RequestMapping("/item")
 public class ItemController {
     @Autowired
     private ItemService itemService;
@@ -26,15 +29,27 @@ public class ItemController {
      * @param itemId
      * @return
      */
-    @RequestMapping("/item/{itemId}")
+    @RequestMapping("/{itemId}")
     @ResponseBody
     public TbItem getItemById(@PathVariable Long itemId) {
         return itemService.getItemById(itemId);
     }
 
-    @RequestMapping("/item/list")
+    /**
+     * 查询所有商品
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping("/list")
     @ResponseBody
     public EUDdataGridResult getItemList(Integer page, Integer rows) {
         return itemService.getItemList(page, rows);
+    }
+
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    @ResponseBody
+    public TaotaoResult cteateItem(TbItem item) {
+        return itemService.createItem(item);
     }
 }

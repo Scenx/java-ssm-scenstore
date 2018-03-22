@@ -3,6 +3,8 @@ package com.taotao.controller;
 import com.taotao.common.pojo.EUDdataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
+import com.taotao.pojo.TbItemDesc;
+import com.taotao.pojo.TbItemParamItem;
 import com.taotao.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -37,6 +39,7 @@ public class ItemController {
 
     /**
      * 查询所有商品
+     *
      * @param page
      * @param rows
      * @return
@@ -47,9 +50,14 @@ public class ItemController {
         return itemService.getItemList(page, rows);
     }
 
+    /**
+     * 保存商品
+     * @param item
+     * @return
+     */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     @ResponseBody
-    public TaotaoResult cteateItem(TbItem item) {
-        return itemService.createItem(item);
+    public TaotaoResult cteateItem(TbItem item, TbItemDesc itemDesc, TbItemParamItem itemParamItem) throws Exception {
+        return itemService.createItem(item,itemDesc,itemParamItem);
     }
 }

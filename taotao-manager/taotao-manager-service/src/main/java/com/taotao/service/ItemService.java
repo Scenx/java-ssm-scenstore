@@ -3,6 +3,8 @@ package com.taotao.service;
 import com.taotao.common.pojo.EUDdataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
+import com.taotao.pojo.TbItemDesc;
+import com.taotao.pojo.TbItemParamItem;
 
 /**
  * 商品管理业务层接口
@@ -30,8 +32,11 @@ public interface ItemService {
 
     /**
      * 保存商品
+     *
      * @param item
+     * @param itemDesc
+     * @param itemParamItem
      * @return
      */
-    TaotaoResult createItem(TbItem item);
+    TaotaoResult createItem(TbItem item, TbItemDesc itemDesc, TbItemParamItem itemParamItem) throws Exception;
 }

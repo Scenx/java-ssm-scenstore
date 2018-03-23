@@ -26,9 +26,14 @@ public interface ItemService {
      *
      * @param page
      * @param rows
+     * @param id
+     * @param title
+     * @param catName
+     * @param startPrice
+     * @param endPrice
      * @return
      */
-    EUDdataGridResult getItemList(Integer page, Integer rows);
+    EUDdataGridResult getItemList(Integer page, Integer rows, Long id, String title, String catName, Long startPrice, Long endPrice);
 
     /**
      * 保存商品

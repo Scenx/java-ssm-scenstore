@@ -51,7 +51,7 @@
             <tr>
                 <td>商品描述:</td>
                 <td>
-                    <textarea style="width:800px;height:300px;visibility:hidden;" name="desc"></textarea>
+                    <textarea style="width:800px;height:300px;visibility:hidden;" name="itemDesc"></textarea>
                 </td>
             </tr>
             <tr class="params hide">
@@ -61,7 +61,7 @@
                 </td>
             </tr>
         </table>
-        <input type="hidden" name="itemParams"/>
+        <input type="hidden" name="paramData"/>
     </form>
     <div style="padding:5px">
         <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">提交</a>
@@ -73,12 +73,12 @@
     //页面初始化完毕后执行此方法
     $(function () {
         //创建富文本编辑器
-        itemAddEditor = TAOTAO.createEditor("#itemAddForm [name=desc]");
+        itemAddEditor = TAOTAO.createEditor("#itemAddForm [name=itemDesc]");
         //初始化类目选择和图片上传器
         TAOTAO.init({
             fun: function (node) {
                 //根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
-                //TAOTAO.changeItemParam(node, "itemAddForm");
+                TAOTAO.changeItemParam(node, "itemAddForm");
             }
         });
     });
@@ -95,7 +95,6 @@
         //同步文本框中的商品描述
         itemAddEditor.sync();
         //取商品的规格
-        /*
         var paramJson = [];
         $("#itemAddForm .params li").each(function(i,e){
             var trs = $(e).find("tr");
@@ -115,8 +114,7 @@
         });
         //把json对象转换成字符串
         paramJson = JSON.stringify(paramJson);
-        $("#itemAddForm [name=itemParams]").val(paramJson);
-        */
+        $("#itemAddForm [name=paramData]").val(paramJson);
         //ajax的post方式提交表单
         //$("#itemAddForm").serialize()将表单序列号为key-value形式的字符串
         $.post("/item/save", $("#itemAddForm").serialize(), function (data) {

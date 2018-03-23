@@ -1,4 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+商品id:<input id="searchId" class="easyui-numberspinner" value="" data-options="increment:1" style="width:120px;">
+<span>&nbsp;&nbsp;&nbsp;</span>
+商品标题:<input class="easyui-textbox" value="" type="text" id="searchTitle"/>
+<span>&nbsp;&nbsp;&nbsp;</span>
+商品分类:<input class="easyui-textbox" value="" type="text" id="searchCatName"/>
+<span>&nbsp;&nbsp;&nbsp;</span>
+价格区间:<input id="searchStartPrice" class="easyui-numberspinner" value="" data-options="increment:1" style="width:120px;">
+<span>&lt</span>
+<input class="easyui-numberspinner" id="searchEndPrice" value="" data-options="increment:1" style="width:120px;">
+<span>价格</span>
+<button class="easyui-linkbutton" data-options="iconCls:'icon-search'" style="width:80px" onclick="itemSearch()">查询
+</button>
 <table class="easyui-datagrid" id="itemList" title="商品列表"
        data-options="singleSelect:false,collapsible:true,pagination:true,url:'/item/list',method:'get',pageSize:30,toolbar:toolbar">
     <thead>
@@ -6,9 +18,9 @@
         <th data-options="field:'ck',checkbox:true"></th>
         <th data-options="field:'id',width:60">商品ID</th>
         <th data-options="field:'title',width:200">商品标题</th>
-        <th data-options="field:'cid',width:100">叶子类目</th>
+        <th data-options="field:'catName',width:100">商品分类</th>
         <th data-options="field:'sellPoint',width:100">卖点</th>
-        <th data-options="field:'price',width:70,align:'right',formatter:TAOTAO.formatPrice">价格</th>
+        <th data-options="field:'price',width:70,align:'right'">价格</th>
         <th data-options="field:'num',width:70,align:'right'">库存数量</th>
         <th data-options="field:'barcode',width:100">条形码</th>
         <th data-options="field:'status',width:60,align:'center',formatter:TAOTAO.formatItemStatus">状态</th>
@@ -21,6 +33,7 @@
      data-options="modal:true,closed:true,iconCls:'icon-save',href:'/rest/page/item-edit'"
      style="width:80%;height:80%;padding:10px;">
 </div>
+
 <script>
 
     function getSelectionsIds() {
@@ -58,7 +71,7 @@
                 onLoad: function () {
                     //回显数据
                     var data = $("#itemList").datagrid("getSelections")[0];
-                    data.priceView = TAOTAO.formatPrice(data.price);
+                    // data.priceView = TAOTAO.formatPrice(data.price);
                     $("#itemeEditForm").form("load", data);
 
                     // 加载商品描述
@@ -174,4 +187,19 @@
             });
         }
     }];
+
+    function itemSearch() {
+        if ($("#searchStartPrice").val() <= $("#searchEndPrice")) {
+            var params = {
+                "id": $("#searchId").val(),
+                "title": $("#searchTitle").val(),
+                "catName": $("#searchCatName").val(),
+                "startPrice": $("#searchStartPrice").val(),
+                "endPrice": $("#searchEndPrice").val()
+            }
+            $("#itemList").datagrid({queryParams: params});
+        } else {
+            $.message.alert('提示', '开始价格务必小于结束价格');
+        }
+    }
 </script>

@@ -1,10 +1,12 @@
 package com.taotao.mapper;
 
+import com.taotao.pojo.ItemBean;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 public interface TbItemMapper {
     int countByExample(TbItemExample example);
@@ -28,4 +30,12 @@ public interface TbItemMapper {
     int updateByPrimaryKeySelective(TbItem record);
 
     int updateByPrimaryKey(TbItem record);
+
+    /**
+     * 多条件查询所有商品
+     *
+     * @param map
+     * @return
+     */
+    List<ItemBean> getSearchItemList(Map<String, Object> map);
 }

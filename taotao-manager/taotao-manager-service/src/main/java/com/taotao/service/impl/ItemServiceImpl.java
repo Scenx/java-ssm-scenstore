@@ -10,11 +10,14 @@ import com.taotao.mapper.TbItemMapper;
 import com.taotao.mapper.TbItemParamItemMapper;
 import com.taotao.pojo.*;
 import com.taotao.service.ItemService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 商品管理业务层实现类
@@ -40,17 +43,39 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public EUDdataGridResult getItemList(Integer page, Integer rows) {
+    public EUDdataGridResult getItemList(Integer page, Integer rows, Long id, String title, String catName, Long startPrice, Long endPrice) {
+
+        Map<String, Object> map = new HashMap<String, Object>();
+        //检索条件封装
+        if (id != null) {
+            map.put("id", id);
+        }
+        if (StringUtils.isNotBlank(title)) {
+            map.put("title", title);
+        }
+        if (StringUtils.isNotBlank(catName)) {
+            map.put("catName", catName);
+        }
+        if (startPrice != null && endPrice == null) {
+            map.put("startPrice", startPrice);
+        }
+        if (endPrice != null && startPrice == null) {
+            map.put("endPrice", endPrice);
+        }
+        if (startPrice != null && endPrice != null) {
+            map.put("startPrice", startPrice);
+            map.put("endPrice", endPrice);
+        }
+
 //        查询商品列表
-        TbItemExample example = new TbItemExample();
 //        分页处理
         PageHelper.startPage(page, rows);
-        List<TbItem> list = itemMapper.selectByExample(example);
+        List<ItemBean> list = itemMapper.getSearchItemList(map);
 //        创建一个返回值对象
         EUDdataGridResult result = new EUDdataGridResult();
         result.setRows(list);
 //        取记录总条数
-        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        PageInfo<ItemBean> pageInfo = new PageInfo<>(list);
         result.setTotal(pageInfo.getTotal());
         return result;
     }

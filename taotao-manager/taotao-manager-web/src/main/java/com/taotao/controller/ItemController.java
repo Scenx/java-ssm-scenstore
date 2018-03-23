@@ -46,8 +46,8 @@ public class ItemController {
      */
     @RequestMapping("/list")
     @ResponseBody
-    public EUDdataGridResult getItemList(Integer page, Integer rows) {
-        return itemService.getItemList(page, rows);
+    public EUDdataGridResult getItemList(Long id, String title, String catName, Long startPrice, Long endPrice, Integer page, Integer rows) {
+        return itemService.getItemList(page, rows, id, title, catName, startPrice, endPrice);
     }
 
     /**

@@ -10,18 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfbd249-f1dc-49d8-8bae-9e02ac8366e5" name="Default" comment="商品规格参数实现">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/src/main/java/com/taotao/pojo/ItemBean.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="$PROJECT_DIR$/../taotao-common/taotao-common.iml" afterPath="$PROJECT_DIR$/../taotao-common/taotao-common.iml" />
       <change beforePath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/pojo/EUDdataGridResult.class" afterPath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/pojo/EUDdataGridResult.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/pojo/EUTreeNode.class" afterPath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/pojo/EUTreeNode.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/pojo/TaotaoResult.class" afterPath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/pojo/TaotaoResult.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/utils/FtpUtil.class" afterPath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/utils/FtpUtil.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/utils/IDUtils.class" afterPath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/utils/IDUtils.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/utils/JsonUtils.class" afterPath="$PROJECT_DIR$/../taotao-common/target/classes/com/taotao/common/utils/JsonUtils.class" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.java" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.java" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.xml" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/taotao-manager-mapper.iml" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/taotao-manager-mapper.iml" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbContentCategoryMapper.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbContentCategoryMapper.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbContentMapper.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbContentMapper.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbItemCatMapper.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbItemCatMapper.class" />
@@ -34,7 +28,6 @@
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbOrderMapper.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbOrderMapper.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbOrderShippingMapper.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbOrderShippingMapper.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbUserMapper.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/target/classes/com/taotao/mapper/TbUserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/taotao-manager-pojo.iml" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/taotao-manager-pojo.iml" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbContent.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbContent.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbContentCategory.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbContentCategory.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbContentCategoryExample$Criteria.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbContentCategoryExample$Criteria.class" />
@@ -90,19 +83,12 @@
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbUserExample$Criterion.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbUserExample$Criterion.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbUserExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbUserExample$GeneratedCriteria.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbUserExample.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/target/classes/com/taotao/pojo/TbUserExample.class" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/src/main/java/com/taotao/service/ItemService.java" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/src/main/java/com/taotao/service/ItemService.java" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/src/main/java/com/taotao/service/impl/ItemServiceImpl.java" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/src/main/java/com/taotao/service/impl/ItemServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/taotao-manager-service.iml" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/taotao-manager-service.iml" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/ItemCatService.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/ItemCatService.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/ItemService.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/ItemService.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/PictureService.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/PictureService.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/impl/ItemCatServiceImpl.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/impl/ItemCatServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/impl/ItemServiceImpl.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/impl/ItemServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/impl/PictureServiceImpl.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/target/classes/com/taotao/service/impl/PictureServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/java/com/taotao/controller/ItemController.java" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/java/com/taotao/controller/ItemController.java" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/webapp/WEB-INF/js/common.js" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/webapp/WEB-INF/js/common.js" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/taotao-manager-web.iml" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/taotao-manager-web.iml" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/classes/com/taotao/controller/ItemCatController.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/classes/com/taotao/controller/ItemCatController.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/classes/com/taotao/controller/ItemController.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/classes/com/taotao/controller/ItemController.class" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/classes/com/taotao/controller/PageController.class" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/classes/com/taotao/controller/PageController.class" />
@@ -123,16 +109,9 @@
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-mapper-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-mapper-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-pojo-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-service-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/test-classes/com/taotao/controller/FTPTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/test-classes/com/taotao/controller/PageHelperTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager.iml" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/44fa3885-6e05-410e-a6eb-6b71f139e64d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/44fa3885-6e05-410e-a6eb-6b71f139e64d.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/taotao-parent.iml" afterPath="$PROJECT_DIR$/taotao-parent.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -220,7 +199,7 @@
         <entry file="file://$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="626">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -232,15 +211,15 @@
             <state relative-caret-position="3831">
               <caret line="234" column="13" lean-forward="false" selection-start-line="234" selection-start-column="13" selection-end-line="234" selection-end-column="13" />
               <folding>
-                <marker date="1521781034402" expanded="true" signature="4867:4979" ph="select from tb_item" />
-                <marker date="1521781034402" expanded="true" signature="5070:5130" ph="delete from tb_item... " />
-                <marker date="1521781034402" expanded="true" signature="5233:5252" ph="delete from tb_item... " />
-                <marker date="1521781034402" expanded="true" signature="5444:5912" ph="insert into tb_item... " />
-                <marker date="1521781034402" expanded="true" signature="8289:8317" ph="select count... tb_item" />
-                <marker date="1521781034402" expanded="true" signature="8549:9740" ph="SELECT j.id,... t_join" />
-                <marker date="1521781034402" expanded="true" signature="11407:11984" ph="update tb_item... " />
-                <marker date="1521781034402" expanded="true" signature="12207:13385" ph="update tb_item... " />
-                <marker date="1521781034402" expanded="true" signature="13484:13989" ph="update tb_item... " />
+                <marker date="1521781743666" expanded="true" signature="4867:4979" ph="select from tb_item" />
+                <marker date="1521781743666" expanded="true" signature="5070:5130" ph="delete from tb_item... " />
+                <marker date="1521781743666" expanded="true" signature="5233:5252" ph="delete from tb_item... " />
+                <marker date="1521781743666" expanded="true" signature="5444:5912" ph="insert into tb_item... " />
+                <marker date="1521781743666" expanded="true" signature="8289:8317" ph="select count... tb_item" />
+                <marker date="1521781743666" expanded="true" signature="8549:9739" ph="SELECT j.id,... t_join" />
+                <marker date="1521781743666" expanded="true" signature="11406:11983" ph="update tb_item... " />
+                <marker date="1521781743666" expanded="true" signature="12206:13384" ph="update tb_item... " />
+                <marker date="1521781743666" expanded="true" signature="13483:13988" ph="update tb_item... " />
               </folding>
             </state>
           </provider>
@@ -374,8 +353,8 @@
         <option value="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo/src/main/java/com/taotao/pojo/ItemBean.java" />
         <option value="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.java" />
         <option value="$PROJECT_DIR$/../taotao-manager/taotao-manager-service/src/main/java/com/taotao/service/impl/ItemServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp" />
         <option value="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.xml" />
+        <option value="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/src/main/webapp/WEB-INF/jsp/item-list.jsp" />
       </list>
     </option>
   </component>
@@ -930,7 +909,7 @@
       <workItem from="1521684410895" duration="12098000" />
       <workItem from="1521699999181" duration="978000" />
       <workItem from="1521701112639" duration="9891000" />
-      <workItem from="1521765231169" duration="10142000" />
+      <workItem from="1521765231169" duration="10269000" />
     </task>
     <task id="LOCAL-00001" summary="商品规格参数实现">
       <created>1521700759611</created>
@@ -939,7 +918,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521700759611</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="商品规格参数实现">
+      <created>1521781757096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1521781757096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -975,7 +961,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97210000" />
+    <option name="totallyTimeSpent" value="97337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1062,8 +1048,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="商品规格参数实现" />
     <option name="LAST_COMMIT_MESSAGE" value="商品规格参数实现" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1376,7 +1364,7 @@
     <entry file="file://$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper/src/main/java/com/taotao/mapper/TbItemMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1439,15 +1427,15 @@
         <state relative-caret-position="3831">
           <caret line="234" column="13" lean-forward="false" selection-start-line="234" selection-start-column="13" selection-end-line="234" selection-end-column="13" />
           <folding>
-            <marker date="1521781034402" expanded="true" signature="4867:4979" ph="select from tb_item" />
-            <marker date="1521781034402" expanded="true" signature="5070:5130" ph="delete from tb_item... " />
-            <marker date="1521781034402" expanded="true" signature="5233:5252" ph="delete from tb_item... " />
-            <marker date="1521781034402" expanded="true" signature="5444:5912" ph="insert into tb_item... " />
-            <marker date="1521781034402" expanded="true" signature="8289:8317" ph="select count... tb_item" />
-            <marker date="1521781034402" expanded="true" signature="8549:9740" ph="SELECT j.id,... t_join" />
-            <marker date="1521781034402" expanded="true" signature="11407:11984" ph="update tb_item... " />
-            <marker date="1521781034402" expanded="true" signature="12207:13385" ph="update tb_item... " />
-            <marker date="1521781034402" expanded="true" signature="13484:13989" ph="update tb_item... " />
+            <marker date="1521781743666" expanded="true" signature="4867:4979" ph="select from tb_item" />
+            <marker date="1521781743666" expanded="true" signature="5070:5130" ph="delete from tb_item... " />
+            <marker date="1521781743666" expanded="true" signature="5233:5252" ph="delete from tb_item... " />
+            <marker date="1521781743666" expanded="true" signature="5444:5912" ph="insert into tb_item... " />
+            <marker date="1521781743666" expanded="true" signature="8289:8317" ph="select count... tb_item" />
+            <marker date="1521781743666" expanded="true" signature="8549:9739" ph="SELECT j.id,... t_join" />
+            <marker date="1521781743666" expanded="true" signature="11406:11983" ph="update tb_item... " />
+            <marker date="1521781743666" expanded="true" signature="12206:13384" ph="update tb_item... " />
+            <marker date="1521781743666" expanded="true" signature="13483:13988" ph="update tb_item... " />
           </folding>
         </state>
       </provider>

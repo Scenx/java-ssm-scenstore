@@ -109,4 +109,40 @@ public class ItemController {
     public TaotaoResult getItemDesc(@PathVariable Long itemId) {
         return itemDescService.getItemDesc(itemId);
     }
+
+    /**
+     * 根据id批量删除商品
+     *
+     * @param ids
+     * @return
+     */
+    @RequestMapping("/delete")
+    @ResponseBody
+    public TaotaoResult deleteItem(Long[] ids) {
+        return itemService.deleteItem(ids);
+    }
+
+    /**
+     * 根据id批量下架商品
+     *
+     * @param ids
+     * @return
+     */
+    @RequestMapping("/instock")
+    @ResponseBody
+    public TaotaoResult instockItem(Long[] ids) {
+        return itemService.instockItem(ids);
+    }
+
+    /**
+     * 根据id批量上架商品
+     *
+     * @param ids
+     * @return
+     */
+    @RequestMapping("/reshelf")
+    @ResponseBody
+    public TaotaoResult reshelfItem(Long[] ids) {
+        return itemService.reshelfItem(ids);
+    }
 }

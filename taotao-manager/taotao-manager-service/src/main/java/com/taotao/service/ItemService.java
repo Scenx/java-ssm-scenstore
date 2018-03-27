@@ -71,4 +71,28 @@ public interface ItemService {
      * @throws Exception
      */
     TaotaoResult updateItem(TbItem item, TbItemDesc itemDesc, Long itemParamId, String itemParams) throws Exception;
+
+    /**
+     * 根据id批量删除商品
+     *
+     * @param ids
+     * @return
+     */
+    TaotaoResult deleteItem(Long[] ids);
+
+    /**
+     * 根据id批量下架商品
+     *
+     * @param ids
+     * @return
+     */
+    TaotaoResult instockItem(Long[] ids);
+
+    /**
+     * 根据id批量上架商品
+     *
+     * @param ids
+     * @return
+     */
+    TaotaoResult reshelfItem(Long[] ids);
 }

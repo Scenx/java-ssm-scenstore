@@ -158,6 +158,36 @@ public class ItemServiceImpl implements ItemService {
         return TaotaoResult.ok();
     }
 
+    @Override
+    public TaotaoResult deleteItem(Long[] ids) {
+        for (Long id : ids) {
+            itemMapper.deleteByPrimaryKey(id);
+        }
+        return TaotaoResult.ok();
+    }
+
+    @Override
+    public TaotaoResult instockItem(Long[] ids) {
+        TbItem item = new TbItem();
+        for (Long id : ids) {
+            item.setId(id);
+            item.setStatus((byte) 2);
+            itemMapper.updateByPrimaryKeySelective(item);
+        }
+        return TaotaoResult.ok();
+    }
+
+    @Override
+    public TaotaoResult reshelfItem(Long[] ids) {
+        TbItem item = new TbItem();
+        for (Long id : ids) {
+            item.setId(id);
+            item.setStatus((byte) 1);
+            itemMapper.updateByPrimaryKeySelective(item);
+        }
+        return TaotaoResult.ok();
+    }
+
     /**
      * 添加商品描述
      *

@@ -139,7 +139,7 @@
             $.messager.confirm('确认', '确定删除ID为 ' + ids + ' 的商品吗？', function (r) {
                 if (r) {
                     var params = {"ids": ids};
-                    $.post("/rest/item/delete", params, function (data) {
+                    $.post("/item/delete", params, function (data) {
                         if (data.status == 200) {
                             $.messager.alert('提示', '删除商品成功!', undefined, function () {
                                 $("#itemList").datagrid("reload");
@@ -161,7 +161,7 @@
             $.messager.confirm('确认', '确定下架ID为 ' + ids + ' 的商品吗？', function (r) {
                 if (r) {
                     var params = {"ids": ids};
-                    $.post("/rest/item/instock", params, function (data) {
+                    $.post("/item/instock", params, function (data) {
                         if (data.status == 200) {
                             $.messager.alert('提示', '下架商品成功!', undefined, function () {
                                 $("#itemList").datagrid("reload");
@@ -183,7 +183,7 @@
             $.messager.confirm('确认', '确定上架ID为 ' + ids + ' 的商品吗？', function (r) {
                 if (r) {
                     var params = {"ids": ids};
-                    $.post("/rest/item/reshelf", params, function (data) {
+                    $.post("/item/reshelf", params, function (data) {
                         if (data.status == 200) {
                             $.messager.alert('提示', '上架商品成功!', undefined, function () {
                                 $("#itemList").datagrid("reload");
@@ -214,17 +214,17 @@
 
         if ($("#searchStartPrice").val() <= $("#searchEndPrice").val() || $("#searchEndPrice").val() == null || $("#searchEndPrice").val() == "") {
 
-        window.location.href = "${pageContext.request.contextPath}/item/outputExcel?id="
-            + $("#searchId").val()
-            + "&title="
-            + $("#searchTitle").val()
-            + "&catName="
-            + $("#searchCatName").val()
-            + "&startPrice="
-            + $("#searchStartPrice").val()
-            + "&endPrice="
-            + $("#searchEndPrice").val()
-    }else {
+            window.location.href = "${pageContext.request.contextPath}/item/outputExcel?id="
+                + $("#searchId").val()
+                + "&title="
+                + $("#searchTitle").val()
+                + "&catName="
+                + $("#searchCatName").val()
+                + "&startPrice="
+                + $("#searchStartPrice").val()
+                + "&endPrice="
+                + $("#searchEndPrice").val()
+        } else {
             alert("开始价格务必小于结束价格");
         }
     }

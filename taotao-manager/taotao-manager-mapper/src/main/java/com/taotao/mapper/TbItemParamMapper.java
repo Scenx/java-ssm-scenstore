@@ -1,10 +1,12 @@
 package com.taotao.mapper;
 
+import com.taotao.pojo.ItemParamBean;
 import com.taotao.pojo.TbItemParam;
 import com.taotao.pojo.TbItemParamExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 public interface TbItemParamMapper {
     int countByExample(TbItemParamExample example);
@@ -34,4 +36,12 @@ public interface TbItemParamMapper {
     int updateByPrimaryKeyWithBLOBs(TbItemParam record);
 
     int updateByPrimaryKey(TbItemParam record);
+
+    /**
+     * 多条件查询所有规格模版
+     *
+     * @param map
+     * @return
+     */
+    List<ItemParamBean> getItemParamList(Map<String, Object> map);
 }

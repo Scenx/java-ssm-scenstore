@@ -206,8 +206,11 @@
         i.num,
         i.barcode,
         i.status,
+        IF(i.status=1,"正常","下架") as statusName,
         i.created,
-        i.updated
+        i.updated,
+        i.cid,
+        i.image
         FROM
         tb_item i LEFT JOIN tb_item_cat c on i.cid=c.id
         WHERE

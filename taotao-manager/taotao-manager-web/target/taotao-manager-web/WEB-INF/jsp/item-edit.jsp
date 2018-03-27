@@ -5,6 +5,8 @@
 <div style="padding:10px 10px 10px 10px">
     <form id="itemeEditForm" class="itemForm" method="post">
         <input type="hidden" name="id"/>
+        <input type="hidden" name="created">
+        <input type="hidden" name="status"/>
         <table cellpadding="5">
             <tr>
                 <td>商品类目:</td>
@@ -52,7 +54,7 @@
             <tr>
                 <td>商品描述:</td>
                 <td>
-                    <textarea style="width:800px;height:300px;visibility:hidden;" name="desc"></textarea>
+                    <textarea style="width:800px;height:300px;visibility:hidden;" name="itemDesc"></textarea>
                 </td>
             </tr>
             <tr class="params hide">
@@ -66,14 +68,15 @@
         <input type="hidden" name="itemParamId"/>
     </form>
     <div style="padding:5px">
-        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">提交</a>
+        <%--<a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">提交</a>--%>
+        <button class="easyui-linkbutton" onclick="submitForm()">提交</button>
     </div>
 </div>
-<script type="text/javascript">
+<script>
     var itemEditEditor;
     $(function () {
         //实例化编辑器
-        itemEditEditor = TAOTAO.createEditor("#itemeEditForm [name=desc]");
+        itemEditEditor = TAOTAO.createEditor("#itemeEditForm [name=itemDesc]");
     });
 
     function submitForm() {
@@ -81,7 +84,7 @@
             $.messager.alert('提示', '表单还未填写完成!');
             return;
         }
-        $("#itemeEditForm [name=price]").val(eval($("#itemeEditForm [name=priceView]").val()) * 1000);
+        $("#itemeEditForm [name=price]").val(eval($("#itemeEditForm [name=priceView]").val()));
         itemEditEditor.sync();
 
         var paramJson = [];
@@ -105,9 +108,9 @@
 
         $("#itemeEditForm [name=itemParams]").val(paramJson);
 
-        $.post("/rest/item/update", $("#itemeEditForm").serialize(), function (data) {
-            if (data.status == 200) {
-                $.messager.alert('提示', '修改商品成功!', 'info', function () {
+        $.post("/item/update",$("#itemeEditForm").serialize(), function(data){
+            if(data.status == 200){
+                $.messager.alert('提示','修改商品成功!','info',function(){
                     $("#itemEditWindow").window('close');
                     $("#itemList").datagrid("reload");
                 });

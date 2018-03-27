@@ -6,6 +6,8 @@ import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
 import com.taotao.pojo.TbItemParamItem;
 
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * 商品管理业务层接口
  *
@@ -37,11 +39,36 @@ public interface ItemService {
 
     /**
      * 保存商品
-     *
      * @param item
      * @param itemDesc
      * @param itemParamItem
      * @return
+     * @throws Exception
      */
     TaotaoResult createItem(TbItem item, TbItemDesc itemDesc, TbItemParamItem itemParamItem) throws Exception;
+
+    /**
+     * 生成商品报表
+     *
+     * @param response
+     * @param id
+     * @param title
+     * @param catName
+     * @param startPrice
+     * @param endPrice
+     * @throws Exception
+     */
+    void getExcel(HttpServletResponse response, Long id, String title, String catName, Long startPrice, Long endPrice) throws Exception;
+
+    /**
+     * 更新商品
+     *
+     * @param item
+     * @param itemDesc
+     * @param itemParamId
+     * @param itemParams
+     * @return
+     * @throws Exception
+     */
+    TaotaoResult updateItem(TbItem item, TbItemDesc itemDesc, Long itemParamId, String itemParams) throws Exception;
 }

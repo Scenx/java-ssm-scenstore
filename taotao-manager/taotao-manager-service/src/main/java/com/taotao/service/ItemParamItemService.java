@@ -1,5 +1,7 @@
 package com.taotao.service;
 
+import com.taotao.common.pojo.TaotaoResult;
+
 /**
  * 商品具体规格参数业务层接口
  * @author Scen
@@ -11,5 +13,5 @@ public interface ItemParamItemService {
      * @param itemId
      * @return
      */
-    String getItemParamByItemId(Long itemId);
+    TaotaoResult getItemParamByItemId(Long itemId);
 }

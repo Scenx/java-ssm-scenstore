@@ -8,8 +8,11 @@
 价格区间:<input id="searchStartPrice" class="easyui-numberspinner" value="" data-options="increment:1" style="width:120px;">
 <span>&lt</span>
 <input class="easyui-numberspinner" id="searchEndPrice" value="" data-options="increment:1" style="width:120px;">
-<span>价格</span>
+<span>&nbsp;&nbsp;&nbsp;</span>
 <button class="easyui-linkbutton" data-options="iconCls:'icon-search'" style="width:80px" onclick="itemSearch()">查询
+</button>
+<span>&nbsp;&nbsp;&nbsp;</span>
+<button class="easyui-linkbutton" data-options="iconCls:'icon-search'" style="width:80px" onclick="outputExcel()">生成报表
 </button>
 <table class="easyui-datagrid" id="itemList" title="商品列表"
        data-options="singleSelect:false,collapsible:true,pagination:true,url:'/item/list',method:'get',pageSize:30,toolbar:toolbar">
@@ -23,14 +26,14 @@
         <th data-options="field:'price',width:70,align:'right'">价格</th>
         <th data-options="field:'num',width:70,align:'right'">库存数量</th>
         <th data-options="field:'barcode',width:100">条形码</th>
-        <th data-options="field:'status',width:60,align:'center',formatter:TAOTAO.formatItemStatus">状态</th>
+        <th data-options="field:'statusName',width:60,align:'center'">状态</th>
         <th data-options="field:'created',width:130,align:'center',formatter:TAOTAO.formatDateTime">创建日期</th>
         <th data-options="field:'updated',width:130,align:'center',formatter:TAOTAO.formatDateTime">更新日期</th>
     </tr>
     </thead>
 </table>
 <div id="itemEditWindow" class="easyui-window" title="编辑商品"
-     data-options="modal:true,closed:true,iconCls:'icon-save',href:'/rest/page/item-edit'"
+     data-options="modal:true,closed:true,iconCls:'icon-save',href:'/item-edit'"
      style="width:80%;height:80%;padding:10px;">
 </div>
 
@@ -71,11 +74,14 @@
                 onLoad: function () {
                     //回显数据
                     var data = $("#itemList").datagrid("getSelections")[0];
-                    // data.priceView = TAOTAO.formatPrice(data.price);
+                    data.priceView = data.price;
                     $("#itemeEditForm").form("load", data);
 
+                    $("#itemeEditForm [name=created]").val(TAOTAO.formatDateTime(data.created));
+                    $("#itemeEditForm [name=status]").val(data.status);
+
                     // 加载商品描述
-                    $.getJSON('/rest/item/query/item/desc/' + data.id, function (_data) {
+                    $.getJSON('/item/desc/' + data.id, function (_data) {
                         if (_data.status == 200) {
                             //UM.getEditor('itemeEditDescEditor').setContent(_data.data.itemDesc, false);
                             itemEditEditor.html(_data.data.itemDesc);
@@ -83,7 +89,7 @@
                     });
 
                     //加载商品规格
-                    $.getJSON('/rest/item/param/item/query/' + data.id, function (_data) {
+                    $.getJSON('/item/param/item/query/' + data.id, function (_data) {
                         if (_data && _data.status == 200 && _data.data && _data.data.paramData) {
                             $("#itemeEditForm .params").show();
                             $("#itemeEditForm [name=itemParams]").val(_data.data.paramData);
@@ -112,6 +118,7 @@
 
                     TAOTAO.init({
                         "pics": data.image,
+                        "catName": data.catName,
                         "cid": data.cid,
                         fun: function (node) {
                             TAOTAO.changeItemParam(node, "itemeEditForm");
@@ -189,7 +196,7 @@
     }];
 
     function itemSearch() {
-        if ($("#searchStartPrice").val() <= $("#searchEndPrice")) {
+        if ($("#searchStartPrice").val() <= $("#searchEndPrice").val() || $("#searchEndPrice").val() == null || $("#searchEndPrice").val() == "") {
             var params = {
                 "id": $("#searchId").val(),
                 "title": $("#searchTitle").val(),
@@ -199,7 +206,26 @@
             }
             $("#itemList").datagrid({queryParams: params});
         } else {
-            $.message.alert('提示', '开始价格务必小于结束价格');
+            alert("开始价格务必小于结束价格");
+        }
+    }
+
+    function outputExcel() {
+
+        if ($("#searchStartPrice").val() <= $("#searchEndPrice").val() || $("#searchEndPrice").val() == null || $("#searchEndPrice").val() == "") {
+
+            window.location.href = "${pageContext.request.contextPath}/item/outputExcel?id="
+                + $("#searchId").val()
+                + "&title="
+                + $("#searchTitle").val()
+                + "&catName="
+                + $("#searchCatName").val()
+                + "&startPrice="
+                + $("#searchStartPrice").val()
+                + "&endPrice="
+                + $("#searchEndPrice").val()
+        } else {
+            alert("开始价格务必小于结束价格");
         }
     }
 </script>

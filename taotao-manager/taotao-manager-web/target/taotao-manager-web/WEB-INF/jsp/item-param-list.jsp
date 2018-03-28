@@ -72,11 +72,11 @@
                     $("#itemParamAddTable [name=id]").val(data.id);
                     $("#itemParamAddTable [name=catName]").html(data.catName);
         }
-    }).window("open");
+            }).window("open");
 
 
         }
-        }, {
+    }, {
         text: '删除',
         iconCls: 'icon-cancel',
         handler: function () {
@@ -99,7 +99,7 @@
             });
         }
     }];
-    
+
     function itemParamSearch() {
         var params = {
             "catName": $("#searchItemCatName").val()

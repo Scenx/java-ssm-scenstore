@@ -9,22 +9,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfbd249-f1dc-49d8-8bae-9e02ac8366e5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/controller/ItemCatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/pojo/CatNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/pojo/CatResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/service/ItemCatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/service/impl/ItemCatServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-mapper-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-mapper-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-pojo-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../taotao-manager/taotao-manager-web/target/taotao-manager-web/WEB-INF/lib/taotao-manager-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="0dfbd249-f1dc-49d8-8bae-9e02ac8366e5" name="Default" comment="商业商品类目rest服务展示">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../taotao-portal/src/main/webapp/category.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../taotao-portal/src/main/webapp/js/lib-v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../taotao-portal/src/main/webapp/js/lib-v1.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -136,8 +123,8 @@
       <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../taotao-portal/src/main/webapp/WEB-INF/jsp/commons/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3025">
-              <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+            <state relative-caret-position="1801">
+              <caret line="145" column="22" lean-forward="true" selection-start-line="145" selection-start-column="22" selection-end-line="145" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -158,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/service/impl/ItemCatServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-44">
-              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -167,7 +154,7 @@
         <entry file="file://$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/controller/ItemCatController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="122">
-              <caret line="45" column="48" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="48" />
+              <caret line="46" column="48" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -898,7 +885,7 @@
       <workItem from="1522283162556" duration="267000" />
       <workItem from="1522283472069" duration="98000" />
       <workItem from="1522629408513" duration="477000" />
-      <workItem from="1522630116895" duration="8618000" />
+      <workItem from="1522630116895" duration="8878000" />
     </task>
     <task id="LOCAL-00001" summary="商品规格参数实现">
       <created>1521700759611</created>
@@ -963,7 +950,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522217580020</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="商业商品类目rest服务展示">
+      <created>1522640244762</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522640244762</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -999,7 +993,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160399000" />
+    <option name="totallyTimeSpent" value="160659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1105,7 +1099,8 @@
     <MESSAGE value="删除和上架下架商品" />
     <MESSAGE value="完成商品类目规格参数crud" />
     <MESSAGE value="rest服务工程和前台首页类目展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="rest服务工程和前台首页类目展示" />
+    <MESSAGE value="商业商品类目rest服务展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="商业商品类目rest服务展示" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1388,14 +1383,14 @@
     <entry file="file://$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/service/impl/ItemCatServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
-          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../taotao-rest/src/main/java/com/taotao/rest/controller/ItemCatController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="48" />
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1462,8 +1457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../taotao-portal/src/main/webapp/WEB-INF/jsp/commons/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3025">
-          <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+        <state relative-caret-position="1801">
+          <caret line="145" column="22" lean-forward="true" selection-start-line="145" selection-start-column="22" selection-end-line="145" selection-end-column="22" />
         </state>
       </provider>
     </entry>

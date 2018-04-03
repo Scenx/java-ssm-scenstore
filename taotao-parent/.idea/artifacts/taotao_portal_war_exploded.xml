@@ -7,6 +7,9 @@
           <element id="module-output" name="taotao-portal" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="taotao-manager-pojo-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="taotao-manager-pojo" />
+          </element>
           <element id="archive" name="taotao-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-common" />
           </element>

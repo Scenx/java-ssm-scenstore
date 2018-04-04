@@ -1,12 +1,16 @@
 package com.taotao.rest.service.impl;
 
+import com.taotao.common.utils.JsonUtils;
 import com.taotao.mapper.TbItemCatMapper;
 import com.taotao.pojo.TbItemCat;
 import com.taotao.pojo.TbItemCatExample;
+import com.taotao.rest.dao.JedisClient;
 import com.taotao.rest.pojo.CatNode;
 import com.taotao.rest.pojo.CatResult;
 import com.taotao.rest.service.ItemCatService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -24,11 +28,35 @@ public class ItemCatServiceImpl implements ItemCatService {
     @Autowired
     private TbItemCatMapper itemCatMapper;
 
+    @Autowired
+    private JedisClient jedisClient;
+
+    @Value("${INDEX_ITEMCAT_REDIS_KEY}")
+    private String INDEX_ITEMCAT_REDIS_KEY;
+
     @Override
     public CatResult getItemCatList() {
+//        从缓存中取内容
+        try {
+            String result = jedisClient.get(INDEX_ITEMCAT_REDIS_KEY);
+            if (!StringUtils.isBlank(result)) {
+//                把字符串转换成pojo
+                CatResult catResult = JsonUtils.jsonToPojo(result, CatResult.class);
+                return catResult;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         CatResult catResult = new CatResult();
         //查询分类列表
         catResult.setData(getCatList(0));
+//      向缓存中添加内容
+        try {
+            String cacheString = JsonUtils.objectToJson(catResult);
+            jedisClient.set(INDEX_ITEMCAT_REDIS_KEY, cacheString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return catResult;
     }
 

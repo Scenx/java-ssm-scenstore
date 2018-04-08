@@ -70,7 +70,13 @@ public class ContentServiceImpl implements ContentService {
     @Override
     public TaotaoResult deleteContent(Long[] ids) {
         for (Long id : ids) {
+            TbContent content = contentMapper.selectByPrimaryKey(id);
             contentMapper.deleteByPrimaryKey(id);
+            try {
+                HttpClientUtil.doGet(REST_BASE_URL + REST_CONTENT_SYNC_URL + content.getCategoryId());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return TaotaoResult.ok();
     }
@@ -79,6 +85,11 @@ public class ContentServiceImpl implements ContentService {
     public TaotaoResult editContent(TbContent content) {
         content.setUpdated(new Date());
         contentMapper.updateByPrimaryKeySelective(content);
+        try {
+            HttpClientUtil.doGet(REST_BASE_URL + REST_CONTENT_SYNC_URL + content.getCategoryId());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return TaotaoResult.ok();
     }
 }

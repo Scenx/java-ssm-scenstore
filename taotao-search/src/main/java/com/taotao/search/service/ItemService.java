@@ -15,8 +15,9 @@ public interface ItemService {
 
     /**
      * 导入检索出来的商品到solr服务器
-     *
-     * @return
+     * @return 状态
+     * @throws IOException
+     * @throws SolrServerException
      */
     TaotaoResult importAllItems() throws IOException, SolrServerException;
 }

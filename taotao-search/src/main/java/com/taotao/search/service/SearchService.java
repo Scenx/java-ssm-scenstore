@@ -1,6 +1,6 @@
 package com.taotao.search.service;
 
-import com.taotao.search.pojo.SearchResult;
+import com.taotao.common.pojo.SearchResult;
 import org.apache.solr.client.solrj.SolrServerException;
 
 /**
@@ -13,11 +13,11 @@ public interface SearchService {
 
     /**
      * 条件查询商品
-     *
      * @param queryString
      * @param page
      * @param rows
-     * @return
+     * @return 条件查询商品
+     * @throws SolrServerException
      */
     SearchResult search(String queryString, Integer page, Integer rows) throws SolrServerException;
 }

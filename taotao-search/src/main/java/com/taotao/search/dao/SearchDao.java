@@ -1,6 +1,6 @@
 package com.taotao.search.dao;
 
-import com.taotao.search.pojo.SearchResult;
+import com.taotao.common.pojo.SearchResult;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 
@@ -14,9 +14,9 @@ public interface SearchDao {
 
     /**
      * 商品搜索
-     *
      * @param query
      * @return
+     * @throws SolrServerException
      */
     SearchResult search(SolrQuery query) throws SolrServerException;
 }

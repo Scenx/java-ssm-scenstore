@@ -3,7 +3,7 @@ package com.taotao.search.service.impl;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.ExceptionUtil;
 import com.taotao.search.mapper.ItemMapper;
-import com.taotao.search.pojo.Item;
+import com.taotao.common.pojo.Item;
 import com.taotao.search.service.ItemService;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.common.SolrInputDocument;

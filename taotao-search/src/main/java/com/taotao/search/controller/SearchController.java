@@ -2,7 +2,7 @@ package com.taotao.search.controller;
 
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.ExceptionUtil;
-import com.taotao.search.pojo.SearchResult;
+import com.taotao.common.pojo.SearchResult;
 import com.taotao.search.service.SearchService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.solr.client.solrj.SolrServerException;

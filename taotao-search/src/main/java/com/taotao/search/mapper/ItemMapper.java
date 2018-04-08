@@ -1,6 +1,6 @@
 package com.taotao.search.mapper;
 
-import com.taotao.search.pojo.Item;
+import com.taotao.common.pojo.Item;
 
 import java.util.List;
 

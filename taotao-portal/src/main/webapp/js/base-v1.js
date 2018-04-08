@@ -37,7 +37,7 @@ function addToFavorite() {
 }
 
 function search(a) {
-    var b = "http://localhost:8082/search.html?q=" + encodeURIComponent(document.getElementById(a).value);
+    var b = "http://localhost:8084/search.html?q=" + encodeURIComponent(document.getElementById(a).value);
     return window.location.href = b;
 }
 

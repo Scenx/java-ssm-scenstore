@@ -12,6 +12,7 @@
         <module>../taotao-manager</module>
         <module>../taotao-rest</module>
         <module>../taotao-portal</module>
+        <module>../taotao-search</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -26,7 +27,7 @@
         <slf4j.version>1.7.25</slf4j.version>
         <jackson.version>2.9.4</jackson.version>
         <druid.version>1.1.8</druid.version>
-        <httpclient.version>4.5.5</httpclient.version>
+        <httpclient.version>4.3.5</httpclient.version>
         <jstl.version>1.2</jstl.version>
         <servlet-api.version>3.1.0</servlet-api.version>
         <jsp-api.version>2.3.1</jsp-api.version>

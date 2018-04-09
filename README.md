@@ -1,1 +1,1 @@
-# java-ssm-taotaostore
+# java-ssm-scenstore

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="scen-portal:war">
+    <output-path>$PROJECT_DIR$/../scen-portal/target</output-path>
+    <root id="archive" name="scen-portal.war">
+      <element id="artifact" artifact-name="scen-portal:war exploded" />
+    </root>
+  </artifact>
+</component>

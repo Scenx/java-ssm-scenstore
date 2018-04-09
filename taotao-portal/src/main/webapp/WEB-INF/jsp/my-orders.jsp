@@ -7,9 +7,9 @@
 <head>
     <meta http-equiv="Cache-Control" content="max-age=300"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>我的订单 - 淘淘</title>
-    <meta name="Keywords" content="java,淘淘java"/>
-    <meta name="description" content="在淘淘中找到了29910件java的类似商品，其中包含了“图书”，“电子书”，“教育音像”，“骑行运动”等类型的java的商品。"/>
+    <title>我的订单 - Scen</title>
+    <meta name="Keywords" content="java,Scenjava"/>
+    <meta name="description" content="在Scen中找到了29910件java的类似商品，其中包含了“图书”，“电子书”，“教育音像”，“骑行运动”等类型的java的商品。"/>
     <link rel="stylesheet" type="text/css" href="/css/base.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="/css/myjd.common.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="/css/myjd.order.css" media="all"/>
@@ -199,7 +199,7 @@
 		    		                </span>
 
                                         <span class="tcol2">
-                        淘淘
+                        Scen
                     </span>
                                         <span class="tcol3">
                         <a class="btn-im" onclick="getPamsForChat()" href="#none" title="联系客服"></a>
@@ -272,7 +272,7 @@
 		    		                </span>
 
                                         <span class="tcol2">
-                        淘淘
+                        Scen
                     </span>
                                         <span class="tcol3">
                         <a class="btn-im" onclick="getPamsForChat()" href="#none" title="联系客服"></a>
@@ -345,7 +345,7 @@
 		    		                </span>
 
                                         <span class="tcol2">
-                        淘淘
+                        Scen
                     </span>
                                         <span class="tcol3">
                         <a class="btn-im" onclick="getPamsForChat()" href="#none" title="联系客服"></a>
@@ -418,7 +418,7 @@
 		    		                </span>
 
                                         <span class="tcol2">
-                        淘淘
+                        Scen
                     </span>
                                         <span class="tcol3">
                         <a class="btn-im" onclick="getPamsForChat()" href="#none" title="联系客服"></a>
@@ -491,7 +491,7 @@
 		    		                </span>
 
                                         <span class="tcol2">
-                        淘淘
+                        Scen
                     </span>
                                         <span class="tcol3">
                         <a class="btn-im" onclick="getPamsForChat()" href="#none" title="联系客服"></a>
@@ -564,7 +564,7 @@
 		    		                </span>
 
                                         <span class="tcol2">
-                        淘淘
+                        Scen
                     </span>
                                         <span class="tcol3">
                         <a class="btn-im" onclick="getPamsForChat()" href="#none" title="联系客服"></a>
@@ -708,12 +708,13 @@
                         </dd>
                         <dd class="fore2">
                             <div class="item" id="_MYJD_credit"><a clstag="homepage|keycount|home2013|hbt" tag="213"
-                                                                   href="http://baitiao.jd.com/creditUser/record">淘淘白条</a>&nbsp;
+                                                                   href="http://baitiao.jd.com/creditUser/record">Scen白条</a>&nbsp;
                             </div>
                         </dd>
                         <dd class="fore3">
                             <div class="item" id="_MYJD_tx"><a target="_blank" clstag="homepage|keycount|home2013|htx"
-                                                               href="http://mobile.jd.com/yyswt/myjd.do">淘淘通信</a></div>
+                                                               href="http://mobile.jd.com/yyswt/myjd.do">Scen通信</a>
+                            </div>
                         </dd>
                         <dd class="fore4">
                             <div class="item" id="_MYJD_balance"><a target="_blank"
@@ -729,7 +730,7 @@
                         </dd>
                         <dd class="fore6">
                             <div class="item" id="_MYJD_card"><a target="_blank" clstag="homepage|keycount|home2013|he"
-                                                                 href="http://giftcard.jd.com/giftcard/index.action">淘淘卡/E卡</a>
+                                                                 href="http://giftcard.jd.com/giftcard/index.action">Scen卡/E卡</a>
                             </div>
                         </dd>
                         <dd class="fore7 last">

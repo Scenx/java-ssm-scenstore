@@ -18,4 +18,12 @@ public interface ItemMapper {
      * @return
      */
     List<Item> getItemList();
+
+    /**
+     * 根据id取商品索引库所需字段
+     *
+     * @param id
+     * @return
+     */
+    Item getItem(String id);
 }

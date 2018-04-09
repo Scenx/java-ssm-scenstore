@@ -14,8 +14,8 @@ public class SearchResult {
 
     private Long recordCount;
 
-    private Long pageCount;
     private Long curPage;
+    private Long pageCount;
 
 
     public List<Item> getItemList() {

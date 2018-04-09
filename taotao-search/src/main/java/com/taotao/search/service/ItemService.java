@@ -20,4 +20,20 @@ public interface ItemService {
      * @throws SolrServerException
      */
     TaotaoResult importAllItems() throws IOException, SolrServerException;
+
+    /**
+     * 添加和修改商品到索引库
+     *
+     * @param id
+     * @return
+     */
+    TaotaoResult add(String id);
+
+    /**
+     * 同步商品到索引库（删除）
+     *
+     * @param id
+     * @return
+     */
+    TaotaoResult del(String id);
 }

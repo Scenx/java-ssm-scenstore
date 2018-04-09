@@ -1,9 +1,9 @@
 package com.taotao.search.service.impl;
 
+import com.taotao.common.pojo.Item;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.ExceptionUtil;
 import com.taotao.search.mapper.ItemMapper;
-import com.taotao.common.pojo.Item;
 import com.taotao.search.service.ItemService;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.common.SolrInputDocument;
@@ -44,6 +44,40 @@ public class ItemServiceImpl implements ItemService {
                 solrServer.add(document);
             }
 //        提交修改
+            solrServer.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return TaotaoResult.build(500, ExceptionUtil.getStackTrace(e));
+        }
+        return TaotaoResult.ok();
+    }
+
+    @Override
+    public TaotaoResult add(String id) {
+        try {
+//        根据id查询数据库商品取出索引库所需字段
+            Item item = itemMapper.getItem(id);
+            SolrInputDocument document = new SolrInputDocument();
+            document.setField("id", item.getId());
+            document.setField("item_title", item.getTitle());
+            document.setField("item_sell_point", item.getSell_point());
+            document.setField("item_price", item.getPrice());
+            document.setField("item_image", item.getImage());
+            document.setField("item_category_name", item.getCategory_name());
+            document.setField("item_desc", item.getItem_desc());
+            solrServer.add(document);
+            solrServer.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return TaotaoResult.build(500, ExceptionUtil.getStackTrace(e));
+        }
+        return TaotaoResult.ok();
+    }
+
+    @Override
+    public TaotaoResult del(String id) {
+        try {
+            solrServer.deleteById(id);
             solrServer.commit();
         } catch (Exception e) {
             e.printStackTrace();

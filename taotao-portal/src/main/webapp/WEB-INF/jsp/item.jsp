@@ -112,7 +112,7 @@
                         <strong class="p-price" id="jd-price">￥<fmt:formatNumber groupingUsed="false"
                                                                                  maxFractionDigits="2"
                                                                                  minFractionDigits="2"
-                                                                                 value="${item.price / 100 }"/> </strong>
+                                                                                 value="${item.price}"/> </strong>
                         <a id="notice-downp" href="#none" target="_blank" clstag="shangpin|keycount|product|jiangjia">(降价通知)</a>
                     </div>
                 </li>

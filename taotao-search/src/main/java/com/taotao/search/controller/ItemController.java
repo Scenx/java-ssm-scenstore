@@ -36,4 +36,28 @@ public class ItemController {
     public TaotaoResult importAllItems() throws IOException, SolrServerException {
         return itemService.importAllItems();
     }
+
+    /**
+     * 同步商品到索引库（添加和修改）
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping("/add")
+    @ResponseBody
+    public TaotaoResult add(String id) {
+        return itemService.add(id);
+    }
+
+    /**
+     * 同步商品到索引库（删除）
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping("/del")
+    @ResponseBody
+    public TaotaoResult del(String id) {
+        return itemService.del(id);
+    }
 }

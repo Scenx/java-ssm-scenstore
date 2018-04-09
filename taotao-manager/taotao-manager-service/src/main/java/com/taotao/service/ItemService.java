@@ -1,12 +1,14 @@
 package com.taotao.service;
 
 import com.taotao.common.pojo.EUDdataGridResult;
+import com.taotao.common.pojo.SolrIf;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
 import com.taotao.pojo.TbItemParamItem;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * 商品管理业务层接口
@@ -75,18 +77,18 @@ public interface ItemService {
     /**
      * 根据id批量删除商品
      *
-     * @param ids
+     * @param list
      * @return
      */
-    TaotaoResult deleteItem(Long[] ids);
+    TaotaoResult deleteItem(List<SolrIf> list);
 
     /**
      * 根据id批量下架商品
      *
-     * @param ids
+     * @param list
      * @return
      */
-    TaotaoResult instockItem(Long[] ids);
+    TaotaoResult instockItem(List<SolrIf> list);
 
     /**
      * 根据id批量上架商品

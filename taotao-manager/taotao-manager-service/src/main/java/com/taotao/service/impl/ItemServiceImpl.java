@@ -3,8 +3,10 @@ package com.taotao.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.taotao.common.pojo.EUDdataGridResult;
+import com.taotao.common.pojo.SolrIf;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.ExcelUtil;
+import com.taotao.common.utils.HttpClientUtil;
 import com.taotao.common.utils.IDUtils;
 import com.taotao.mapper.TbItemDescMapper;
 import com.taotao.mapper.TbItemMapper;
@@ -16,6 +18,7 @@ import com.taotao.pojo.TbItemParamItem;
 import com.taotao.service.ItemService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletResponse;
@@ -38,6 +41,12 @@ public class ItemServiceImpl implements ItemService {
 
     @Autowired
     private TbItemParamItemMapper itemParamItemMapper;
+
+    @Value("${SEARCH_MANAGER_DEL_URL}")
+    private String SEARCH_MANAGER_DEL_URL;
+
+    @Value("${SEARCH_MANAGER_ADD_URL}")
+    private String SEARCH_MANAGER_ADD_URL;
 
     @Override
     public TbItem getItemById(Long itemId) {
@@ -102,7 +111,7 @@ public class ItemServiceImpl implements ItemService {
         if (result.getStatus() != 200) {
             throw new Exception();
         }
-        return TaotaoResult.ok();
+        return TaotaoResult.ok(item.getId());
     }
 
     @Override
@@ -159,20 +168,45 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public TaotaoResult deleteItem(Long[] ids) {
-        for (Long id : ids) {
-            itemMapper.deleteByPrimaryKey(id);
+    public TaotaoResult deleteItem(List<SolrIf> list) {
+        for (SolrIf solrIf : list) {
+            itemMapper.deleteByPrimaryKey(solrIf.getId());
+        }
+        for (SolrIf solrIf : list) {
+            if (solrIf.getStatus() == 1) {
+                //        添加的参数
+                Map<String, String> param = new HashMap<>();
+                param.put("id", solrIf.getId() + "");
+                //        调用taotao-search的服务同步solr
+                try {
+                    HttpClientUtil.doGet(SEARCH_MANAGER_DEL_URL, param);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
         }
         return TaotaoResult.ok();
     }
 
     @Override
-    public TaotaoResult instockItem(Long[] ids) {
+    public TaotaoResult instockItem(List<SolrIf> list) {
         TbItem item = new TbItem();
-        for (Long id : ids) {
-            item.setId(id);
+        for (SolrIf solrIf : list) {
+            item.setId(solrIf.getId());
             item.setStatus((byte) 2);
             itemMapper.updateByPrimaryKeySelective(item);
+            if (solrIf.getStatus() == 1) {
+                //        添加的参数
+                Map<String, String> param = new HashMap<>();
+                param.put("id", solrIf.getId() + "");
+                //        调用taotao-search的服务同步solr
+                try {
+                    HttpClientUtil.doGet(SEARCH_MANAGER_DEL_URL, param);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
         }
         return TaotaoResult.ok();
     }
@@ -184,6 +218,15 @@ public class ItemServiceImpl implements ItemService {
             item.setId(id);
             item.setStatus((byte) 1);
             itemMapper.updateByPrimaryKeySelective(item);
+            //        添加的参数
+            Map<String, String> param = new HashMap<>();
+            param.put("id", id + "");
+            //        调用taotao-search的服务同步solr
+            try {
+                HttpClientUtil.doGet(SEARCH_MANAGER_ADD_URL, param);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return TaotaoResult.ok();
     }

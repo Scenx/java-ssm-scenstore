@@ -1,5 +1,7 @@
 package com.taotao.common.pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * 商品检索模型
  *
@@ -69,5 +71,14 @@ public class Item {
 
     public void setItem_desc(String item_desc) {
         this.item_desc = item_desc;
+    }
+
+    @JsonIgnore
+    public String[] getImages() {
+        if (image != null) {
+            String[] images = image.split(",");
+            return images;
+        }
+        return null;
     }
 }

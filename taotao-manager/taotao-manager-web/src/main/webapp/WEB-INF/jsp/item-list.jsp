@@ -39,6 +39,7 @@
 
 <script>
 
+
     function getSelectionsIds() {
         var itemList = $("#itemList");
         var sels = itemList.datagrid("getSelections");
@@ -47,6 +48,19 @@
             ids.push(sels[i].id);
         }
         ids = ids.join(",");
+        return ids;
+    }
+
+    function getSelectionsIdd() {
+        var itemList = $("#itemList");
+        var sels = itemList.datagrid("getSelections");
+        var ids = "[";
+        for (var i in sels) {
+            ids += '{"id":' + '"' + sels[i].id + '"' + "," + '"status":' + '"' + sels[i].status + '"' + "},";
+        }
+        ids = ids.substring(0, ids.length - 1);
+        ids += "]";
+
         return ids;
     }
 
@@ -132,13 +146,14 @@
         iconCls: 'icon-cancel',
         handler: function () {
             var ids = getSelectionsIds();
+            var idd = getSelectionsIdd();
             if (ids.length == 0) {
                 $.messager.alert('提示', '未选中商品!');
                 return;
             }
             $.messager.confirm('确认', '确定删除ID为 ' + ids + ' 的商品吗？', function (r) {
                 if (r) {
-                    var params = {"ids": ids};
+                    var params = {"ids": idd};
                     $.post("/item/delete", params, function (data) {
                         if (data.status == 200) {
                             $.messager.alert('提示', '删除商品成功!', undefined, function () {
@@ -154,13 +169,14 @@
         iconCls: 'icon-remove',
         handler: function () {
             var ids = getSelectionsIds();
+            var idd = getSelectionsIdd();
             if (ids.length == 0) {
                 $.messager.alert('提示', '未选中商品!');
                 return;
             }
             $.messager.confirm('确认', '确定下架ID为 ' + ids + ' 的商品吗？', function (r) {
                 if (r) {
-                    var params = {"ids": ids};
+                    var params = {"ids": idd};
                     $.post("/item/instock", params, function (data) {
                         if (data.status == 200) {
                             $.messager.alert('提示', '下架商品成功!', undefined, function () {

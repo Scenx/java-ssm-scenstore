@@ -1,13 +1,17 @@
 package com.taotao.controller;
 
 import com.taotao.common.pojo.EUDdataGridResult;
+import com.taotao.common.pojo.SolrIf;
 import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.common.utils.HttpClientUtil;
+import com.taotao.common.utils.JsonUtils;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
 import com.taotao.pojo.TbItemParamItem;
 import com.taotao.service.ItemDescService;
 import com.taotao.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.ServletRequestDataBinder;
@@ -16,6 +20,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 商品管理表现层
@@ -26,6 +33,10 @@ import java.util.Date;
 @Controller
 @RequestMapping("/item")
 public class ItemController {
+
+    @Value("${SEARCH_MANAGER_ADD_URL}")
+    private String SEARCH_MANAGER_ADD_URL;
+
     @Autowired
     private ItemService itemService;
 
@@ -69,7 +80,17 @@ public class ItemController {
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     @ResponseBody
     public TaotaoResult cteateItem(TbItem item, TbItemDesc itemDesc, TbItemParamItem itemParamItem) throws Exception {
-        return itemService.createItem(item, itemDesc, itemParamItem);
+        TaotaoResult taotaoResult = itemService.createItem(item, itemDesc, itemParamItem);
+        //        添加的参数
+        Map<String, String> param = new HashMap<>();
+        param.put("id", taotaoResult.getData() + "");
+        //        调用taotao-search的服务同步solr
+        try {
+            HttpClientUtil.doGet(SEARCH_MANAGER_ADD_URL, param);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return TaotaoResult.ok();
     }
 
     /**
@@ -82,7 +103,19 @@ public class ItemController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     @ResponseBody
     public TaotaoResult updateItem(TbItem item, TbItemDesc itemDesc, Long itemParamId, String itemParams) throws Exception {
-        return itemService.updateItem(item, itemDesc, itemParamId, itemParams);
+        TaotaoResult taotaoResult = itemService.updateItem(item, itemDesc, itemParamId, itemParams);
+        if (item.getStatus() == 1) {
+            //        添加的参数
+            Map<String, String> param = new HashMap<>();
+            param.put("id", item.getId() + "");
+            //        调用taotao-search的服务同步solr
+            try {
+                HttpClientUtil.doGet(SEARCH_MANAGER_ADD_URL, param);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return taotaoResult;
     }
 
     /**
@@ -118,8 +151,9 @@ public class ItemController {
      */
     @RequestMapping("/delete")
     @ResponseBody
-    public TaotaoResult deleteItem(Long[] ids) {
-        return itemService.deleteItem(ids);
+    public TaotaoResult deleteItem(String ids) {
+        List<SolrIf> list = JsonUtils.jsonToList(ids, SolrIf.class);
+        return itemService.deleteItem(list);
     }
 
     /**
@@ -130,8 +164,9 @@ public class ItemController {
      */
     @RequestMapping("/instock")
     @ResponseBody
-    public TaotaoResult instockItem(Long[] ids) {
-        return itemService.instockItem(ids);
+    public TaotaoResult instockItem(String ids) {
+        List<SolrIf> list = JsonUtils.jsonToList(ids, SolrIf.class);
+        return itemService.instockItem(list);
     }
 
     /**

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="scen-common" />
+        <module name="scen-manager-mapper" />
+        <module name="scen-manager-pojo" />
+        <module name="scen-manager-service" />
+        <module name="scen-manager-web" />
+        <module name="scen-portal" />
+        <module name="scen-rest" />
+        <module name="scen-search" />
+        <module name="taotao-common" />
+        <module name="taotao-manager-mapper" />
+        <module name="taotao-manager-pojo" />
+        <module name="taotao-manager-service" />
+        <module name="taotao-manager-web" />
+        <module name="taotao-portal" />
+        <module name="taotao-rest" />
+        <module name="taotao-search" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="7">
+      <module name="scen-common" target="1.7" />
+      <module name="scen-manager" target="1.7" />
+      <module name="scen-manager-mapper" target="1.7" />
+      <module name="scen-manager-pojo" target="1.7" />
+      <module name="scen-manager-service" target="1.7" />
+      <module name="scen-manager-web" target="1.7" />
+      <module name="scen-parent" target="1.7" />
+      <module name="scen-portal" target="1.7" />
+      <module name="scen-rest" target="1.7" />
+      <module name="scen-search" target="1.7" />
+      <module name="taotao-common" target="1.7" />
+      <module name="taotao-manager" target="1.7" />
+      <module name="taotao-manager-mapper" target="1.7" />
+      <module name="taotao-manager-pojo" target="1.7" />
+      <module name="taotao-manager-service" target="1.7" />
+      <module name="taotao-manager-web" target="1.7" />
+      <module name="taotao-parent" target="1.7" />
+      <module name="taotao-portal" target="1.7" />
+      <module name="taotao-rest" target="1.7" />
+      <module name="taotao-search" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

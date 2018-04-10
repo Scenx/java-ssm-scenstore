@@ -50,7 +50,7 @@ public class SearchController {
 
     @RequestMapping("/products/{itemCid}")
     public String searchByItemCid(@PathVariable Long itemCid, @RequestParam(defaultValue = "1") Integer page, Model model) {
-        String json = HttpClientUtil.doGet(REST_BASE_URL + "itemCat/" + itemCid);
+        String json = HttpClientUtil.doGet(REST_BASE_URL + "/itemCat/" + itemCid);
         ScenResult scenResultItemCat = ScenResult.formatToPojo(json, TbItemCat.class);
         TbItemCat itemCat = (TbItemCat) scenResultItemCat.getData();
         String queryString = itemCat.getName();

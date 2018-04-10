@@ -12,22 +12,30 @@
     <list default="true" id="0dfbd249-f1dc-49d8-8bae-9e02ac8366e5" name="Default" comment="修复">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <ignored path="../scen-common/target/" />
+    <ignored path="../scen-manager/scen-manager-mapper/target/" />
+    <ignored path="../scen-manager/scen-manager-pojo/target/" />
+    <ignored path="../scen-manager/scen-manager-service/target/" />
+    <ignored path="../scen-manager/scen-manager-web/target/" />
+    <ignored path="../scen-portal/target/" />
+    <ignored path="../scen-rest/target/" />
+    <ignored path="../scen-search/target/" />
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/../scen-common/target/maven-archiver/" />
       <directory path="$PROJECT_DIR$/../scen-rest/target/classes/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/maven-status/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/classes/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/" />
-      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/scen-manager-web/" />
       <directory path="$PROJECT_DIR$/../scen-manager/target/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/scen-manager-web/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/classes/" />
       <directory path="$PROJECT_DIR$/../scen-search/target/" />
       <directory path="$PROJECT_DIR$/../scen-portal/target/test-classes/" />
       <directory path="$PROJECT_DIR$/../scen-common/target/maven-status/" />
       <directory path="$PROJECT_DIR$/../scen-rest/target/maven-status/" />
       <directory path="$PROJECT_DIR$/../scen-search/target/scen-search/" />
-      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/maven-status/" />
       <directory path="$PROJECT_DIR$/out/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/maven-status/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/maven-status/" />
       <directory path="$PROJECT_DIR$/../scen-common/target/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/maven-archiver/" />
@@ -58,6 +66,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/taotao_parent$taotao_search.ic" NAME="scen-search Coverage Results" MODIFIED="1523249287265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -378,12 +389,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scen-search/target" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -419,7 +430,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.scen-rest">
+  <component name="RunManager" selected="Tomcat Server.scen-manager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -848,7 +859,7 @@
       <workItem from="1523268606255" duration="352000" />
       <workItem from="1523320479661" duration="20128000" />
       <workItem from="1523345988858" duration="288000" />
-      <workItem from="1523346318055" duration="202000" />
+      <workItem from="1523346318055" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="商品规格参数实现">
       <created>1521700759611</created>
@@ -1011,7 +1022,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523346225578</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修复">
+      <created>1523346559912</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1523346559912</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1047,7 +1065,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292966000" />
+    <option name="totallyTimeSpent" value="293524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1063,14 +1081,15 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49166667" weight="0.35" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49166667" visible="true" weight="0.4319149" />
       <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.26489362" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32837406" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.2829787" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.2829787" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49893618" visible="true" weight="0.16302083" />
@@ -1085,7 +1104,6 @@
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="CDI" order="0" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.26489362" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32978722" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="2" />

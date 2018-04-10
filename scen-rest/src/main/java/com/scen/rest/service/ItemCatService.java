@@ -1,5 +1,6 @@
 package com.scen.rest.service;
 
+import com.scen.common.pojo.ScenResult;
 import com.scen.rest.pojo.CatResult;
 
 /**
@@ -15,4 +16,12 @@ public interface ItemCatService {
      * @return
      */
     CatResult getItemCatList();
+
+    /**
+     * 根据id返回商品类别
+     *
+     * @param itemCid
+     * @return
+     */
+    ScenResult getItemCatById(Long itemCid);
 }

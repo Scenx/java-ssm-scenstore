@@ -107,7 +107,7 @@
             <script type="text/javascript">pageConfig.product.marketPrice = '';</script>
             <ul id="summary">
                 <li id="summary-price">
-                    <div class="dt">淘&nbsp;淘&nbsp;价：</div>
+                    <div class="dt">华&nbsp;华&nbsp;价：</div>
                     <div class="dd">
                         <strong class="p-price" id="jd-price">￥<fmt:formatNumber groupingUsed="false"
                                                                                  maxFractionDigits="2"
@@ -306,11 +306,11 @@
                     <b></b>如果您发现商品信息不准确，欢迎纠错
                 </div>
                 <div id="item-desc" class="detail-content">
-                    ${itemDesc.itemDesc }
+                    <%--商品描述--%>
                 </div>
             </div>
             <div class="mc hide" data-widget="tab-content" id="product-detail-2">
-                ${itemParam}
+                <%--商品规格参数--%>
             </div>
             <div class="mc  hide" data-widget="tab-content" id="product-detail-3">
                 <div class="item-detail">液晶电视×1、底座×1、遥控器×1、使用说明书×1、电源线×1</div>

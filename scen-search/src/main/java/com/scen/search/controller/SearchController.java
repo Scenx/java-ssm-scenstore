@@ -25,6 +25,14 @@ public class SearchController {
     @Autowired
     private SearchService searchService;
 
+    /**
+     * 商品搜索服务
+     *
+     * @param queryString
+     * @param page
+     * @param rows
+     * @return
+     */
     @RequestMapping(value = "/query", method = RequestMethod.GET)
     @ResponseBody
     public ScenResult search(@RequestParam("q") String queryString, @RequestParam(defaultValue = "1") Integer page, @RequestParam(defaultValue = "60") Integer rows) {

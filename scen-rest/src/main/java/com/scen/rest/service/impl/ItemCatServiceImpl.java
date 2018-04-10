@@ -1,5 +1,6 @@
 package com.scen.rest.service.impl;
 
+import com.scen.common.pojo.ScenResult;
 import com.scen.common.utils.JsonUtils;
 import com.scen.mapper.TbItemCatMapper;
 import com.scen.pojo.TbItemCat;
@@ -58,6 +59,12 @@ public class ItemCatServiceImpl implements ItemCatService {
             e.printStackTrace();
         }
         return catResult;
+    }
+
+    @Override
+    public ScenResult getItemCatById(Long itemCid) {
+        TbItemCat itemCat = itemCatMapper.selectByPrimaryKey(itemCid);
+        return ScenResult.ok(itemCat);
     }
 
     /**

@@ -22,6 +22,12 @@ public class ItemCatController {
     @Autowired
     private ItemCatService itemCatService;
 
+    /**
+     * 取所有商品分类
+     *
+     * @param patentId
+     * @return
+     */
     @RequestMapping("/list")
     @ResponseBody
     private List<EUTreeNode> getCatList(@RequestParam(value = "id", defaultValue = "0") Long patentId) {

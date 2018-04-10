@@ -1,10 +1,12 @@
 package com.scen.rest.controller;
 
+import com.scen.common.pojo.ScenResult;
 import com.scen.rest.pojo.CatResult;
 import com.scen.rest.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -49,5 +51,11 @@ public class ItemCatController {
         MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(catResult);
         mappingJacksonValue.setJsonpFunction(callBack);
         return mappingJacksonValue;
+    }
+
+    @RequestMapping("/itemCat/{itemCid}")
+    @ResponseBody
+    public ScenResult getItemCatById(@PathVariable Long itemCid) {
+        return itemCatService.getItemCatById(itemCid);
     }
 }

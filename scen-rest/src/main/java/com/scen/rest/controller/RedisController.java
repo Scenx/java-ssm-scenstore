@@ -21,6 +21,12 @@ public class RedisController {
     private RedisService redisService;
 
 
+    /**
+     * redis（内容）同步
+     *
+     * @param contentCid
+     * @return
+     */
     @RequestMapping("/content/{contentCid}")
     @ResponseBody
     public ScenResult contentCacheSync(@PathVariable Long contentCid) {

@@ -9,55 +9,45 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfbd249-f1dc-49d8-8bae-9e02ac8366e5" name="Default" comment="实现前台商品详情页面">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_manager_web_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_manager_web_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_portal_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_portal_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_rest_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_rest_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_search_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taotao_search_war_exploded.xml" beforeDir="false" />
+    <list default="true" id="0dfbd249-f1dc-49d8-8bae-9e02ac8366e5" name="Default" comment="修复">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-portal/src/main/java/com/scen/portal/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-portal/src/main/java/com/scen/portal/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-search/scen-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-search/scen-search.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/maven-archiver/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/maven-status/" />
-    <ignored path="$PROJECT_DIR$/../scen-common/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-common/target/maven-archiver/" />
-    <ignored path="$PROJECT_DIR$/../scen-common/target/maven-status/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/maven-archiver/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/maven-status/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/maven-archiver/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/maven-status/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/maven-archiver/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/maven-status/" />
-    <ignored path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/scen-manager-web/" />
-    <ignored path="$PROJECT_DIR$/../scen-rest/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-rest/target/maven-status/" />
-    <ignored path="$PROJECT_DIR$/../scen-rest/target/surefire-reports/" />
-    <ignored path="$PROJECT_DIR$/../scen-rest/target/test-classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-search/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-portal/target/classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-portal/target/test-classes/" />
-    <ignored path="$PROJECT_DIR$/../scen-search/target/scen-search/" />
     <manually-removed-from-ignored>
-      <directory path="$PROJECT_DIR$/out/" />
-      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/" />
-      <directory path="$PROJECT_DIR$/../scen-common/target/" />
-      <directory path="$PROJECT_DIR$/../scen-portal/target/" />
+      <directory path="$PROJECT_DIR$/../scen-common/target/maven-archiver/" />
+      <directory path="$PROJECT_DIR$/../scen-rest/target/classes/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/maven-status/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/classes/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/" />
-      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/scen-manager-web/" />
       <directory path="$PROJECT_DIR$/../scen-manager/target/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/classes/" />
       <directory path="$PROJECT_DIR$/../scen-search/target/" />
-      <directory path="$PROJECT_DIR$/target/" />
+      <directory path="$PROJECT_DIR$/../scen-portal/target/test-classes/" />
+      <directory path="$PROJECT_DIR$/../scen-common/target/maven-status/" />
+      <directory path="$PROJECT_DIR$/../scen-rest/target/maven-status/" />
+      <directory path="$PROJECT_DIR$/../scen-search/target/scen-search/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/maven-status/" />
+      <directory path="$PROJECT_DIR$/out/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/maven-status/" />
+      <directory path="$PROJECT_DIR$/../scen-common/target/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/maven-archiver/" />
+      <directory path="$PROJECT_DIR$/../scen-rest/target/surefire-reports/" />
       <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/" />
       <directory path="$PROJECT_DIR$/../scen-rest/target/" />
+      <directory path="$PROJECT_DIR$/../scen-portal/target/classes/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/" />
+      <directory path="$PROJECT_DIR$/../scen-search/target/classes/" />
+      <directory path="$PROJECT_DIR$/../scen-portal/target/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/classes/" />
+      <directory path="$PROJECT_DIR$/target/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/maven-status/" />
+      <directory path="$PROJECT_DIR$/../scen-common/target/classes/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/target/classes/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-web/target/maven-archiver/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/maven-archiver/" />
+      <directory path="$PROJECT_DIR$/../scen-rest/target/test-classes/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-mapper/target/maven-archiver/" />
+      <directory path="$PROJECT_DIR$/../scen-manager/scen-manager-service/target/" />
     </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,9 +58,6 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/taotao_parent$taotao_search.ic" NAME="scen-search Coverage Results" MODIFIED="1523249287265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -345,8 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -355,10 +340,38 @@
               <item name="scen-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="scen-common" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="scen-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scen-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scen-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scen-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scen-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scen-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scen-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scen-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,7 +383,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -834,6 +847,8 @@
       <workItem from="1523268010529" duration="61000" />
       <workItem from="1523268606255" duration="352000" />
       <workItem from="1523320479661" duration="20128000" />
+      <workItem from="1523345988858" duration="288000" />
+      <workItem from="1523346318055" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="商品规格参数实现">
       <created>1521700759611</created>
@@ -989,7 +1004,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523342738353</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="修复">
+      <created>1523346225578</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1523346225578</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1025,7 +1047,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292476000" />
+    <option name="totallyTimeSpent" value="292966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1048,7 +1070,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32837406" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.2829787" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.2829787" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49893618" visible="true" weight="0.16302083" />
@@ -1140,7 +1162,8 @@
     <MESSAGE value="修复一系列bug" />
     <MESSAGE value="修复若干bug" />
     <MESSAGE value="实现前台商品详情页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现前台商品详情页面" />
+    <MESSAGE value="修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1222,9 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scen-rest/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../scen-rest/src/main/resources/resource/resource.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1246,13 +1266,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scen-common/src/main/java/com/scen/common/pojo/ItemInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../scen-common/src/main/java/com/scen/common/pojo/ItemInfo.java" />
     <entry file="file://$PROJECT_DIR$/../scen-common/src/main/java/com/scen/common/pojo/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1449,9 +1463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scen-search/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../scen-search/src/main/resources/spring/applicationContext-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1480,11 +1491,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scen-rest/target/test-classes/com/scen/rest/solr/SolrJTest.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d299f73-6ea7-4eae-8c58-2fbbf2a0de34/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/../scen-portal/src/main/webapp/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

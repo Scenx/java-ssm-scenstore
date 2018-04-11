@@ -13,6 +13,7 @@
         <module>../scen-rest</module>
         <module>../scen-portal</module>
         <module>../scen-search</module>
+        <module>../scen-sso</module>
     </modules>
     <packaging>pom</packaging>
 

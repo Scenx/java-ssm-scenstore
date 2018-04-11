@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/../scen-portal/scen-portal.iml" filepath="$PROJECT_DIR$/../scen-portal/scen-portal.iml" />
       <module fileurl="file://$PROJECT_DIR$/../scen-rest/scen-rest.iml" filepath="$PROJECT_DIR$/../scen-rest/scen-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/../scen-search/scen-search.iml" filepath="$PROJECT_DIR$/../scen-search/scen-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scen-sso/scen-sso.iml" filepath="$PROJECT_DIR$/../scen-sso/scen-sso.iml" />
     </modules>
   </component>
 </project>

@@ -11,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/../scen-portal" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../scen-rest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../scen-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../scen-sso" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

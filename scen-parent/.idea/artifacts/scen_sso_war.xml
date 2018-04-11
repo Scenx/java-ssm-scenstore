@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="scen-sso:war">
+    <output-path>$PROJECT_DIR$/../scen-sso/target</output-path>
+    <root id="archive" name="scen-sso.war">
+      <element id="artifact" artifact-name="scen-sso:war exploded" />
+    </root>
+  </artifact>
+</component>

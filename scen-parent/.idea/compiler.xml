@@ -14,6 +14,7 @@
         <module name="scen-portal" />
         <module name="scen-rest" />
         <module name="scen-search" />
+        <module name="scen-sso" />
         <module name="taotao-common" />
         <module name="taotao-manager-mapper" />
         <module name="taotao-manager-pojo" />
@@ -35,6 +36,7 @@
       <module name="scen-portal" target="1.7" />
       <module name="scen-rest" target="1.7" />
       <module name="scen-search" target="1.7" />
+      <module name="scen-sso" target="1.7" />
       <module name="taotao-common" target="1.7" />
       <module name="taotao-manager" target="1.7" />
       <module name="taotao-manager-mapper" target="1.7" />

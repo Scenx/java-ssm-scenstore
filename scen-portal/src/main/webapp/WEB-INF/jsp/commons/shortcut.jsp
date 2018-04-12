@@ -77,3 +77,21 @@
         <span class="clr"></span>
     </div>
 </div>
+<script>
+    function logout() {
+        var _ticket = $.cookie("SCEN_TOKEN");
+        if (!_ticket) {
+            return;
+        }
+        $.ajax({
+            url: "http://localhost:8085/user/logout/" + _ticket,
+            dataType: "jsonp",
+            type: "GET",
+            success: function (data) {
+                if (data.status == 200) {
+                    location.replace(window.location.href);
+                }
+            }
+        });
+    }
+</script>

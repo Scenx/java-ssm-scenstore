@@ -1,6 +1,7 @@
 package com.scen.sso.service.impl;
 
 import com.scen.common.pojo.ScenResult;
+import com.scen.common.utils.CookieUtils;
 import com.scen.common.utils.JsonUtils;
 import com.scen.mapper.TbUserMapper;
 import com.scen.pojo.TbUser;
@@ -13,6 +14,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -38,6 +41,8 @@ public class UserServiceImpl implements UserService {
     @Value("${SSO_SESSION_EXPIRE}")
     private Integer SSO_SESSION_EXPIRE;
 
+    @Value("${SSO_COOKIE_NAME}")
+    private String SSO_COOKIE_NAME;
     @Override
     public ScenResult checkData(String content, Integer type) {
 //        创建查询条件
@@ -73,7 +78,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ScenResult userLogin(String username, String password) {
+    public ScenResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response) {
         TbUserExample example = new TbUserExample();
         TbUserExample.Criteria criteria = example.createCriteria();
         criteria.andUsernameEqualTo(username);
@@ -94,6 +99,9 @@ public class UserServiceImpl implements UserService {
 //        把信息写到redis
         jedisClient.set(REDIS_USER_SESSION_KEY + ":" + token, JsonUtils.objectToJson(user));
         jedisClient.expire(REDIS_USER_SESSION_KEY + ":" + token, SSO_SESSION_EXPIRE);
+//        添加写cookie逻辑,cookie的有效期是关闭浏览器失效
+        CookieUtils.setCookie(request, response, SSO_COOKIE_NAME, token);
+
 //        返回token
         return ScenResult.ok(token);
     }

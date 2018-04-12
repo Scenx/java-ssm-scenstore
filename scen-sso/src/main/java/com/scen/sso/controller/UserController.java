@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * 用户操作表现层
  *
@@ -26,6 +29,14 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 检查注册字段
+     *
+     * @param param
+     * @param type
+     * @param callback
+     * @return
+     */
     @RequestMapping("/check/{param}/{type}")
     @ResponseBody
     public Object checkData(@PathVariable String param, @PathVariable Integer type, String callback) {
@@ -85,11 +96,17 @@ public class UserController {
         }
     }
 
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
-    public ScenResult userLogin(String username, String password) {
+    public ScenResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response) {
         try {
-            return userService.userLogin(username, password);
+            return userService.userLogin(username, password, request, response);
         } catch (Exception e) {
             e.printStackTrace();
             return ScenResult.build(500, ExceptionUtil.getStackTrace(e));
@@ -124,11 +141,16 @@ public class UserController {
     }
 
 
+    /**
+     * 安全退出
+     * @param token
+     * @param callback
+     * @return
+     */
     @RequestMapping("/logout/{token}")
     @ResponseBody
     public Object logoutUserByToken(@PathVariable String token, String callback) {
         ScenResult result = null;
-
         try {
             result = userService.logoutUserByToken(token);
         } catch (Exception e) {

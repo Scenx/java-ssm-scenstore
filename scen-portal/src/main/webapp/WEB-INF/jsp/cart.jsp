@@ -69,7 +69,7 @@
                             <div class="cell p-goods">
                                 <div class="p-img">
                                     <a href="/item/${cart.id }.html" target="_blank">
-                                        <img clstag="clickcart|keycount|xincart|p-imglistcart" src="${cart.images[0]}"
+                                        <img clstag="clickcart|keycount|xincart|p-imglistcart" src="${cart.image}"
                                              alt="${cart.title}" width="52" height="52">
                                     </a>
                                 </div>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="cell p-price"><span class="price">¥<fmt:formatNumber groupingUsed="false"
-                                                                                             value="${cart.price / 100}"
+                                                                                             value="${cart.price}"
                                                                                              maxFractionDigits="2"
                                                                                              minFractionDigits="2"/> </span>
                             </div>
@@ -108,7 +108,7 @@
             </div><!-- product-list结束 -->
             <div class="cart-toolbar clearfix">
                 <div class="total fr">
-                    <p><span class="totalSkuPrice">¥<fmt:formatNumber value="${totalPrice / 100}" maxFractionDigits="2"
+                    <p><span class="totalSkuPrice">¥<fmt:formatNumber value="${totalPrice}" maxFractionDigits="2"
                                                                       minFractionDigits="2" groupingUsed="true"/></span>总计：
                     </p>
                     <p><span id="totalRePrice">- ¥0.00</span>优惠：</p>
@@ -156,7 +156,7 @@
                         </div>
                         <div class="total fr">
                             总计（不含运费）：
-                            <span class="totalSkuPrice">¥<fmt:formatNumber value="${totalPrice / 100}"
+                            <span class="totalSkuPrice">¥<fmt:formatNumber value="${totalPrice}"
                                                                            maxFractionDigits="2" minFractionDigits="2"
                                                                            groupingUsed="true"/></span>
                         </div>

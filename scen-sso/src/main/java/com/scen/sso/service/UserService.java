@@ -3,6 +3,9 @@ package com.scen.sso.service;
 import com.scen.common.pojo.ScenResult;
 import com.scen.pojo.TbUser;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * 用户操作业务层接口
  *
@@ -33,9 +36,11 @@ public interface UserService {
      *
      * @param username
      * @param password
+     * @param request
+     * @param response
      * @return
      */
-    ScenResult userLogin(String username, String password);
+    ScenResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response);
 
     /**
      * 根据用户使用浏览器里的cookie存储的session令牌查看用户登录信息

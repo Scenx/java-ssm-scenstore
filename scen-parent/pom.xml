@@ -14,6 +14,7 @@
         <module>../scen-portal</module>
         <module>../scen-search</module>
         <module>../scen-sso</module>
+        <module>../scen-order</module>
     </modules>
     <packaging>pom</packaging>
 

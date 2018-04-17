@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/../scen-manager/scen-manager-pojo/scen-manager-pojo.iml" filepath="$PROJECT_DIR$/../scen-manager/scen-manager-pojo/scen-manager-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../scen-manager/scen-manager-service/scen-manager-service.iml" filepath="$PROJECT_DIR$/../scen-manager/scen-manager-service/scen-manager-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../scen-manager/scen-manager-web/scen-manager-web.iml" filepath="$PROJECT_DIR$/../scen-manager/scen-manager-web/scen-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scen-order/scen-order.iml" filepath="$PROJECT_DIR$/../scen-order/scen-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/scen-parent.iml" filepath="$PROJECT_DIR$/scen-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../scen-portal/scen-portal.iml" filepath="$PROJECT_DIR$/../scen-portal/scen-portal.iml" />
       <module fileurl="file://$PROJECT_DIR$/../scen-rest/scen-rest.iml" filepath="$PROJECT_DIR$/../scen-rest/scen-rest.iml" />

@@ -11,6 +11,7 @@
         <module name="scen-manager-pojo" />
         <module name="scen-manager-service" />
         <module name="scen-manager-web" />
+        <module name="scen-order" />
         <module name="scen-portal" />
         <module name="scen-rest" />
         <module name="scen-search" />
@@ -32,6 +33,7 @@
       <module name="scen-manager-pojo" target="1.7" />
       <module name="scen-manager-service" target="1.7" />
       <module name="scen-manager-web" target="1.7" />
+      <module name="scen-order" target="1.7" />
       <module name="scen-parent" target="1.7" />
       <module name="scen-portal" target="1.7" />
       <module name="scen-rest" target="1.7" />

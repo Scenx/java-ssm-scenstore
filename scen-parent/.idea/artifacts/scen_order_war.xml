@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="scen-order:war">
+    <output-path>$PROJECT_DIR$/../scen-order/target</output-path>
+    <root id="archive" name="scen-order.war">
+      <element id="artifact" artifact-name="scen-order:war exploded" />
+    </root>
+  </artifact>
+</component>

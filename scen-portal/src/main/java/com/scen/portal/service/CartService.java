@@ -34,4 +34,14 @@ public interface CartService {
      * @return
      */
     List<CartItem> getCartItemList(HttpServletRequest request, HttpServletResponse response);
+
+
+    /**
+     * 根据商品id删除购物车商品
+     *
+     * @param itemId
+     * @return
+     */
+    ScenResult deleteCartItem(Long itemId, HttpServletRequest request, HttpServletResponse response);
+
 }

@@ -78,6 +78,22 @@ public class CartServiceImpl implements CartService {
         return getCartItemList(request);
     }
 
+    @Override
+    public ScenResult deleteCartItem(Long itemId, HttpServletRequest request, HttpServletResponse response) {
+//        从cookie中取商品列表
+        List<CartItem> itemList = getCartItemList(request);
+//        从列表中找到此商品
+        for (CartItem cartItem : itemList) {
+            if (cartItem.getId().equals(itemId)) {
+                itemList.remove(cartItem);
+                break;
+            }
+        }
+//        把购物车列表重新写入cookie
+        CookieUtils.setCookie(request, response, SCEN_CART_NAME, JsonUtils.objectToJson(itemList), true);
+        return ScenResult.ok();
+    }
+
     /**
      * 从cookie中取商品列表
      *

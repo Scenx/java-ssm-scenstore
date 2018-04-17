@@ -1,6 +1,6 @@
 package com.scen.portal.controller;
 
-import com.scen.portal.pojo.ItemInfo;
+import com.scen.pojo.ItemInfo;
 import com.scen.portal.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

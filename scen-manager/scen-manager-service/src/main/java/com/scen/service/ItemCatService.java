@@ -1,6 +1,6 @@
 package com.scen.service;
 
-import com.scen.common.pojo.EUTreeNode;
+import com.scen.pojo.EUTreeNode;
 
 import java.util.List;
 

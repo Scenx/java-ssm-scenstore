@@ -1,8 +1,8 @@
 package com.scen.search.dao.impl;
 
 import com.scen.search.dao.SearchDao;
-import com.scen.common.pojo.Item;
-import com.scen.common.pojo.SearchResult;
+import com.scen.pojo.Item;
+import com.scen.pojo.SearchResult;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;

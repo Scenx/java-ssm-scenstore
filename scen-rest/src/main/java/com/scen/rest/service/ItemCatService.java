@@ -1,7 +1,7 @@
 package com.scen.rest.service;
 
-import com.scen.common.pojo.ScenResult;
-import com.scen.rest.pojo.CatResult;
+import com.scen.pojo.ScenResult;
+import com.scen.pojo.CatResult;
 
 /**
  * 商品分类返回json业务层接口

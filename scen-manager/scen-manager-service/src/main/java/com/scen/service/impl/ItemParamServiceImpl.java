@@ -2,8 +2,8 @@ package com.scen.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.scen.common.pojo.EUDdataGridResult;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.EUDdataGridResult;
+import com.scen.pojo.ScenResult;
 import com.scen.mapper.TbItemParamMapper;
 import com.scen.pojo.ItemParamBean;
 import com.scen.pojo.TbItemParam;

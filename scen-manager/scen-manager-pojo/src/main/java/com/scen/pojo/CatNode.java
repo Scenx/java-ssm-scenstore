@@ -1,4 +1,4 @@
-package com.scen.rest.pojo;
+package com.scen.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

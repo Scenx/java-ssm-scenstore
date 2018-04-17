@@ -1,7 +1,7 @@
 package com.scen.controller;
 
-import com.scen.common.pojo.EUTreeNode;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.EUTreeNode;
+import com.scen.pojo.ScenResult;
 import com.scen.pojo.TbContentCategory;
 import com.scen.service.ContentCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;

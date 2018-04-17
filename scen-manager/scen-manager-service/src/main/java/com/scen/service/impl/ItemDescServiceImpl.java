@@ -1,6 +1,6 @@
 package com.scen.service.impl;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.mapper.TbItemDescMapper;
 import com.scen.pojo.TbItemDesc;
 import com.scen.service.ItemDescService;

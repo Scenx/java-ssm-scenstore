@@ -1,6 +1,6 @@
 package com.scen.portal.controller;
 
-import com.scen.common.pojo.CartItem;
+import com.scen.pojo.CartItem;
 import com.scen.portal.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -63,6 +63,14 @@ public class CartController {
     }
 
 
+    /**
+     * 删除购物车商品
+     *
+     * @param itemId
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("delete/{itemId}")
     public String deleteCartItem(@PathVariable Long itemId, HttpServletRequest request, HttpServletResponse response) {
         cartService.deleteCartItem(itemId, request, response);

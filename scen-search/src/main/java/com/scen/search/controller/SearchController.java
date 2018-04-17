@@ -1,8 +1,8 @@
 package com.scen.search.controller;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.ExceptionUtil;
-import com.scen.common.pojo.SearchResult;
+import com.scen.pojo.SearchResult;
 import com.scen.search.service.SearchService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.solr.client.solrj.SolrServerException;

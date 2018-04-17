@@ -1,8 +1,8 @@
 package com.scen.controller;
 
-import com.scen.common.pojo.EUDdataGridResult;
-import com.scen.common.pojo.SolrIf;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.EUDdataGridResult;
+import com.scen.pojo.SolrIf;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.HttpClientUtil;
 import com.scen.common.utils.JsonUtils;
 import com.scen.pojo.TbItem;

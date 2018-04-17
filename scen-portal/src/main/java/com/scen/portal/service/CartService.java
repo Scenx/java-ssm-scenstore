@@ -1,7 +1,7 @@
 package com.scen.portal.service;
 
-import com.scen.common.pojo.CartItem;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.CartItem;
+import com.scen.pojo.ScenResult;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

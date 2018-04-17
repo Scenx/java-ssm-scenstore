@@ -1,6 +1,6 @@
 package com.scen.search.controller;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.search.service.ItemService;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.springframework.beans.factory.annotation.Autowired;

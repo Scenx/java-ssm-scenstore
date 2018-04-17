@@ -2,9 +2,9 @@ package com.scen.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.scen.common.pojo.EUDdataGridResult;
-import com.scen.common.pojo.SolrIf;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.EUDdataGridResult;
+import com.scen.pojo.SolrIf;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.ExcelUtil;
 import com.scen.common.utils.HttpClientUtil;
 import com.scen.common.utils.IDUtils;

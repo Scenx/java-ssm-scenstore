@@ -1,6 +1,6 @@
 package com.scen.rest.service;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 
 /**
  * 商品查询服务业务层接口

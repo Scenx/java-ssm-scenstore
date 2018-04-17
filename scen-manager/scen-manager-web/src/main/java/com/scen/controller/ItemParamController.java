@@ -1,7 +1,7 @@
 package com.scen.controller;
 
-import com.scen.common.pojo.EUDdataGridResult;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.EUDdataGridResult;
+import com.scen.pojo.ScenResult;
 import com.scen.pojo.TbItemParam;
 import com.scen.service.ItemParamService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.scen.portal.service.impl;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.HttpClientUtil;
 import com.scen.common.utils.JsonUtils;
 import com.scen.pojo.TbContent;

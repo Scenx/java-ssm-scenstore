@@ -1,7 +1,6 @@
-package com.scen.portal.pojo;
+package com.scen.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.scen.pojo.TbItem;
 
 /**
  * 商品展示bean

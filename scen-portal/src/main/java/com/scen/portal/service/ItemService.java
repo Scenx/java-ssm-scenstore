@@ -1,6 +1,6 @@
 package com.scen.portal.service;
 
-import com.scen.portal.pojo.ItemInfo;
+import com.scen.pojo.ItemInfo;
 
 /**
  * 展示商品业务层接口

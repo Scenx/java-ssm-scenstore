@@ -1,6 +1,6 @@
 package com.scen.portal.service;
 
-import com.scen.common.pojo.SearchResult;
+import com.scen.pojo.SearchResult;
 
 /**
  * 商品搜索业务层接口

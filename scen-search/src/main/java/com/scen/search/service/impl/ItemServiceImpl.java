@@ -1,7 +1,7 @@
 package com.scen.search.service.impl;
 
-import com.scen.common.pojo.Item;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.Item;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.ExceptionUtil;
 import com.scen.search.mapper.ItemMapper;
 import com.scen.search.service.ItemService;

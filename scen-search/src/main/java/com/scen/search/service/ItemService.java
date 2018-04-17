@@ -1,6 +1,6 @@
 package com.scen.search.service;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import org.apache.solr.client.solrj.SolrServerException;
 
 import java.io.IOException;

@@ -1,7 +1,7 @@
 package com.scen.portal.service.impl;
 
-import com.scen.common.pojo.CartItem;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.CartItem;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.CookieUtils;
 import com.scen.common.utils.HttpClientUtil;
 import com.scen.common.utils.JsonUtils;

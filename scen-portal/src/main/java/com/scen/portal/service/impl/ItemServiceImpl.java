@@ -1,11 +1,11 @@
 package com.scen.portal.service.impl;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.HttpClientUtil;
 import com.scen.common.utils.JsonUtils;
 import com.scen.pojo.TbItemDesc;
 import com.scen.pojo.TbItemParamItem;
-import com.scen.portal.pojo.ItemInfo;
+import com.scen.pojo.ItemInfo;
 import com.scen.portal.service.ItemService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;

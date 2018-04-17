@@ -1,6 +1,6 @@
 package com.scen.service.impl;
 
-import com.scen.common.pojo.EUTreeNode;
+import com.scen.pojo.EUTreeNode;
 import com.scen.mapper.TbItemCatMapper;
 import com.scen.pojo.TbItemCat;
 import com.scen.pojo.TbItemCatExample;

@@ -1,13 +1,13 @@
 package com.scen.rest.service.impl;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.JsonUtils;
 import com.scen.mapper.TbItemCatMapper;
 import com.scen.pojo.TbItemCat;
 import com.scen.pojo.TbItemCatExample;
 import com.scen.rest.dao.JedisClient;
-import com.scen.rest.pojo.CatNode;
-import com.scen.rest.pojo.CatResult;
+import com.scen.pojo.CatNode;
+import com.scen.pojo.CatResult;
 import com.scen.rest.service.ItemCatService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

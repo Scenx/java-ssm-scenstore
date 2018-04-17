@@ -1,4 +1,4 @@
-package com.scen.common.pojo;
+package com.scen.pojo;
 
 /**
  * solr索引维护pojo

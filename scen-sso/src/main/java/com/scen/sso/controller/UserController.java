@@ -1,6 +1,6 @@
 package com.scen.sso.controller;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.ExceptionUtil;
 import com.scen.pojo.TbUser;
 import com.scen.sso.service.UserService;

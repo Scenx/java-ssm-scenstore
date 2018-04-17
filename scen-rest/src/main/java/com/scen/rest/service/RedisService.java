@@ -1,6 +1,6 @@
 package com.scen.rest.service;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 
 /**
  * redis缓存业务层接口

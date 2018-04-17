@@ -1,6 +1,6 @@
 package com.scen.service;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 
 /**
  * @author Scen

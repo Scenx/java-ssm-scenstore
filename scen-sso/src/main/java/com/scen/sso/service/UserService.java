@@ -1,6 +1,6 @@
 package com.scen.sso.service;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.pojo.TbUser;
 
 import javax.servlet.http.HttpServletRequest;

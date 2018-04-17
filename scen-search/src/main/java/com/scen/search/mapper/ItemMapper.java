@@ -1,6 +1,6 @@
 package com.scen.search.mapper;
 
-import com.scen.common.pojo.Item;
+import com.scen.pojo.Item;
 
 import java.util.List;
 

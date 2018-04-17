@@ -1,4 +1,4 @@
-package com.scen.common.pojo;
+package com.scen.pojo;
 
 /**
  * easyui树形控件节点格式

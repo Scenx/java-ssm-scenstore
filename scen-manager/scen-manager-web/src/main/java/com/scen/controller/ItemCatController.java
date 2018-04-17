@@ -1,6 +1,6 @@
 package com.scen.controller;
 
-import com.scen.common.pojo.EUTreeNode;
+import com.scen.pojo.EUTreeNode;
 import com.scen.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

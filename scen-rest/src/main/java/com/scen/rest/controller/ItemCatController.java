@@ -1,7 +1,7 @@
 package com.scen.rest.controller;
 
-import com.scen.common.pojo.ScenResult;
-import com.scen.rest.pojo.CatResult;
+import com.scen.pojo.ScenResult;
+import com.scen.pojo.CatResult;
 import com.scen.rest.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.json.MappingJacksonValue;

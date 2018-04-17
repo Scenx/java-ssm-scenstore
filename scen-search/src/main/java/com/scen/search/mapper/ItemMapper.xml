@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.scen.search.mapper.ItemMapper">
-    <select id="getItemList" resultType="com.scen.common.pojo.Item">
+    <select id="getItemList" resultType="com.scen.pojo.Item">
         SELECT
 	a.id,
 	a.title,
@@ -16,7 +16,7 @@
 	LEFT JOIN tb_item_desc c ON a.id = c.item_id
 	where a.status=1
     </select>
-    <select id="getItem" parameterType="java.lang.String" resultType="com.scen.common.pojo.Item">
+    <select id="getItem" parameterType="java.lang.String" resultType="com.scen.pojo.Item">
 		SELECT
 	a.id,
 	a.title,

@@ -1,4 +1,4 @@
-package com.scen.common.pojo;
+package com.scen.pojo;
 
 /**
  * 购物车商品数据模型

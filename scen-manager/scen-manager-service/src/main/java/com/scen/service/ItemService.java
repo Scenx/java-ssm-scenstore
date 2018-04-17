@@ -1,8 +1,8 @@
 package com.scen.service;
 
-import com.scen.common.pojo.EUDdataGridResult;
-import com.scen.common.pojo.SolrIf;
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.EUDdataGridResult;
+import com.scen.pojo.SolrIf;
+import com.scen.pojo.ScenResult;
 import com.scen.pojo.TbItem;
 import com.scen.pojo.TbItemDesc;
 import com.scen.pojo.TbItemParamItem;

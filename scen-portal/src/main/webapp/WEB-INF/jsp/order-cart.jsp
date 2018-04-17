@@ -39,10 +39,10 @@
         <input type="hidden" name="orderItems[${status.index}].price" value="${cart.price}"/>
         <input type="hidden" name="orderItems[${status.index}].totalFee" value="${cart.price * cart.num}"/>
         <input type="hidden" name="orderItems[${status.index}].title" value="${cart.title}"/>
-        <input type="hidden" name="orderItems[${status.index}].picPath" value="${cart.images[0]}"/>
+        <input type="hidden" name="orderItems[${status.index}].picPath" value="${cart.image}"/>
     </c:forEach>
     <input type="hidden" name="payment"
-           value="<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice/100 }"/>"/>
+           value="<fmt:formatNumber groupingUsed="false" maxFractionDigits="2" minFractionDigits="2" value="${totalPrice}"/>"/>
     <input type="hidden" name="orderShipping.receiverName" value="入云龙"/>
     <input type="hidden" name="orderShipping.receiverMobile" value="15891588888"/>
     <input type="hidden" name="orderShipping.receiverState" value="北京"/>
@@ -192,7 +192,7 @@
 
                                                         <div class="p-img">
                                                             <a target="_blank" href="/item/${cart.id}.html">
-                                                                <img src="${cart.images[0]}" alt="">
+                                                                <img src="${cart.image}" alt="">
                                                             </a>
                                                         </div>
                                                         <div class="goods-msg">
@@ -206,7 +206,7 @@
                                                                 <strong>￥<fmt:formatNumber
                                                                         groupingUsed="false" maxFractionDigits="2"
                                                                         minFractionDigits="2"
-                                                                        value="${cart.price / 100 }"/></strong>
+                                                                        value="${cart.price}"/></strong>
                                                                 <!--增加预售金额显示 end-->
                                                                 <span class="ml20"> x${cart.num} </span>
                                                                 <span class="ml20 p-inventory"
@@ -271,7 +271,7 @@
 					<span>
 						总商品金额：
 					</span>
-                                <em class="price" id="warePriceId">¥<fmt:formatNumber value="${totalPrice / 100}"
+                                <em class="price" id="warePriceId">¥<fmt:formatNumber value="${totalPrice}"
                                                                                       maxFractionDigits="2"
                                                                                       minFractionDigits="2"
                                                                                       groupingUsed="true"/></em>
@@ -282,7 +282,7 @@
                             </div>
                             <div class="list">
                                 <span>应付总额：</span> <em class="price" id="sumPayPriceId">
-                                ￥<fmt:formatNumber value="${totalPrice / 100}" maxFractionDigits="2"
+                                ￥<fmt:formatNumber value="${totalPrice}" maxFractionDigits="2"
                                                    minFractionDigits="2" groupingUsed="true"/></em>
                             </div>
                         </div>
@@ -305,7 +305,7 @@
                                     提交订单
                                 </button>
                                 <span class="total">应付总额：<strong id="payPriceId">￥<fmt:formatNumber
-                                        value="${totalPrice / 100}" maxFractionDigits="2" minFractionDigits="2"
+                                        value="${totalPrice}" maxFractionDigits="2" minFractionDigits="2"
                                         groupingUsed="true"/></strong>
           </span>
                                 <span id="checkCodeDiv"></span>

@@ -1,6 +1,6 @@
 package com.scen.rest.service.impl;
 
-import com.scen.common.pojo.ScenResult;
+import com.scen.pojo.ScenResult;
 import com.scen.common.utils.ExceptionUtil;
 import com.scen.rest.dao.JedisClient;
 import com.scen.rest.service.RedisService;

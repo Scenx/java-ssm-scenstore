@@ -204,7 +204,7 @@
                 </li>
                 <li id="choose-btns">
                     <div id="choose-btn-append" class="btn">
-                        <a class="btn-append " id="InitCartUrl" href="/cart/add/${item.id}.html"
+                        <a class="btn-append " id="InitCartUrl" href="javascript:;" onclick="addItemCart()"
                            clstag="shangpin|keycount|product|initcarturl">加入购物车<b></b></a>
                     </div>
                     <div id="choose-btn-easybuy" class="btn"></div>
@@ -402,6 +402,10 @@
             itemControl.getItemDesc(itemId);
         }, 1000);
     });
+
+    function addItemCart() {
+        window.location.href = "/cart/add/${item.id}.html?num=" + $("#buy-num").val();
+    }
 </script>
 </body>
 </html>

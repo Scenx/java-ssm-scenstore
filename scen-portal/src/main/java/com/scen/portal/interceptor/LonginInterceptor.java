@@ -48,6 +48,8 @@ public class LonginInterceptor implements HandlerInterceptor {
             return false;
         }
 //        取到用户信息，放行
+//          把用户信息放入rquest
+        httpServletRequest.setAttribute("user", user);
 //        返回值决定handler是否执行。true执行
         return true;
     }

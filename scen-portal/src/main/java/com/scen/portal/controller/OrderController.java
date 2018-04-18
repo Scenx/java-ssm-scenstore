@@ -2,6 +2,7 @@ package com.scen.portal.controller;
 
 import com.scen.pojo.CartItem;
 import com.scen.pojo.Order;
+import com.scen.pojo.TbUser;
 import com.scen.portal.service.CartService;
 import com.scen.portal.service.OrderService;
 import org.joda.time.DateTime;
@@ -56,8 +57,14 @@ public class OrderController {
      * @return
      */
     @RequestMapping("/create")
-    public String createOrder(Order order, Model model) {
+    public String createOrder(Order order, Model model, HttpServletRequest request) {
         try {
+//            从req作用域中取用户信息
+            TbUser user = (TbUser) request.getAttribute("user");
+//            在order对象中补全用户信息
+            order.setUserId(user.getId());
+            order.setBuyerNick(user.getUsername());
+//            调用服务
             String orderId = orderService.createOrder(order);
             model.addAttribute("orderId", orderId);
             model.addAttribute("payment", order.getPayment());

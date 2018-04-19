@@ -10,24 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfbd249-f1dc-49d8-8bae-9e02ac8366e5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../scen-manager/scen-manager-web/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-manager/scen-manager-web/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-order/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-order/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-order/src/main/resources/spring/applicationContext-jedis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-order/src/main/resources/spring/applicationContext-jedis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-portal/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-portal/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-portal/src/test/java/com/scen/httpclient/HttpClientTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-rest/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-rest/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-rest/src/main/resources/spring/applicationContext-jedis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-rest/src/main/resources/spring/applicationContext-jedis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-rest/src/test/java/com/scen/rest/jedis/JedisTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-rest/src/test/java/com/scen/rest/solr/SolrJTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-search/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-search/scen-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-search/scen-search.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-search/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-search/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-search/src/main/resources/resource/resource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-search/src/main/resources/resource/resource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-search/src/main/resources/spring/applicationContext-solr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-search/src/main/resources/spring/applicationContext-solr.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-sso/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-sso/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-sso/src/main/resources/spring/applicationContext-jedis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-sso/src/main/resources/spring/applicationContext-jedis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scen-sso/src/main/webapp/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../scen-sso/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
     </list>
     <ignored path="../scen-common/target/" />
     <ignored path="../scen-manager/scen-manager-mapper/target/" />
@@ -187,7 +170,7 @@
       <file leaf-file-name="applicationContext-jedis.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../scen-rest/src/main/resources/spring/applicationContext-jedis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="2508">
               <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
             </state>
           </provider>
@@ -312,7 +295,6 @@
         <option value="$PROJECT_DIR$/../scen-search/src/test/java/com/scen/search/SolrCloudTest.java" />
         <option value="$PROJECT_DIR$/../scen-search/src/main/resources/spring/applicationContext-solr.xml" />
         <option value="$PROJECT_DIR$/../scen-manager/scen-manager-web/src/main/java/com/scen/controller/ItemController.java" />
-        <option value="$PROJECT_DIR$/../scen-rest/src/main/resources/spring/applicationContext-jedis.xml" />
         <option value="$PROJECT_DIR$/../scen-rest/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/../scen-search/src/main/resources/resource/resource.properties" />
         <option value="$PROJECT_DIR$/../scen-search/src/main/resources/log4j.properties" />
@@ -323,6 +305,7 @@
         <option value="$PROJECT_DIR$/../scen-order/src/main/resources/spring/applicationContext-jedis.xml" />
         <option value="$PROJECT_DIR$/../scen-portal/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/../scen-manager/scen-manager-web/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/../scen-rest/src/main/resources/spring/applicationContext-jedis.xml" />
       </list>
     </option>
   </component>
@@ -1210,7 +1193,7 @@
       <workItem from="1523924870565" duration="24816000" />
       <workItem from="1524010743146" duration="6436000" />
       <workItem from="1524097664428" duration="9336000" />
-      <workItem from="1524126878859" duration="983000" />
+      <workItem from="1524126878859" duration="1704000" />
     </task>
     <task id="LOCAL-00001" summary="商品规格参数实现">
       <created>1521700759611</created>
@@ -1429,7 +1412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524032483765</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="solr-cloud集群上线 nginx反向代理">
+      <created>1524128307927</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1524128307927</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1465,10 +1455,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381669000" />
+    <option name="totallyTimeSpent" value="382390000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -1490,7 +1480,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32837406" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.37340426" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.37340426" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Problems" order="13" />
@@ -1564,7 +1554,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="商品规格参数实现" />
     <MESSAGE value="多条件查询商品" />
     <MESSAGE value="编辑商品" />
     <MESSAGE value="修正pojo pom文件" />
@@ -1589,7 +1578,8 @@
     <MESSAGE value="订单工程整合搭建" />
     <MESSAGE value="订单功能完成" />
     <MESSAGE value="修复添加购物车bug，修改订单提交用户信息遗漏bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复添加购物车bug，修改订单提交用户信息遗漏bug" />
+    <MESSAGE value="solr-cloud集群上线 nginx反向代理" />
+    <option name="LAST_COMMIT_MESSAGE" value="solr-cloud集群上线 nginx反向代理" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1930,7 +1920,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../scen-rest/src/main/resources/spring/applicationContext-jedis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="2508">
           <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
         </state>
       </provider>

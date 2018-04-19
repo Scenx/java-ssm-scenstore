@@ -59,6 +59,14 @@
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-solrj</artifactId>
         </dependency>
+
+        <!-- 单元测试 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <!-- 如果不添加此节点mybatis的mapper.xml文件都会被漏掉。 -->
